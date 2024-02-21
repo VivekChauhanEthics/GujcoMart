@@ -1,0 +1,6508 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('./GothamFont/Gotham-Black.otf') format('truetype');
+    src: url('./GothamFont/Gotham-Bold.otf') format('truetype');
+    src: url('./GothamFont/Gotham-BookItalic.otf') format('truetype');
+    src: url('./GothamFont/Gotham-Light.otf') format('truetype');
+    src: url('./GothamFont/Gotham-Thin.otf') format('truetype');
+    src: url('./GothamFont/Gotham-ThinItalic.otf') format('truetype');
+    src: url('./GothamFont/Gotham-UltraItalic.otf') format('truetype');
+    src: url('./GothamFont/Gotham-XLight.otf') format('truetype');
+    src: url('./GothamFont/Gotham-XLightItalic.otf') format('truetype');
+    src: url('./GothamFont/GothamBold.ttf') format('truetype');
+    src: url('./GothamFont/GothamBoldItalic.ttf') format('truetype');
+    src: url('./GothamFont/GothamBook.ttf') format('truetype');
+    src: url('./GothamFont/GothamBookItalic.ttf') format('truetype');
+    src: url('./GothamFont/GothamLight.ttf') format('truetype');
+    src: url('./GothamFont/GothamLightItalic.ttf') format('truetype');
+    src: url('./GothamFont/GothamMedium.ttf') format('truetype');
+    src: url('./GothamFont/GothamMedium_1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('./AvenirFont/AvenirLTStd-Black.otf') format('truetype');
+    src: url('./AvenirFont/AvenirLTStd-Book.otf') format('truetype');
+    src: url('./AvenirFont/AvenirLTStd-Roman.otf') format('truetype');
+}
+
+
+
+/******* Hpme page css *******/
+/* Header css */
+.headerContainer{
+    background: rgba(255, 255, 255, 1);
+    height: 72px;
+}
+.NavBarList{
+    gap: 35px;
+}
+.navbarCollapse{
+    flex-grow: unset;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.navbarCollapse ul{
+    width: 100%;
+    margin-left: 20%;
+}
+.navbarCollapse .NavBarList a{
+    font-family: 'Gotham', sans-serif;
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 72px;
+    letter-spacing: 0em;
+    color: rgba(6, 118, 60, 1);
+}
+.nav-link:hover {
+    color: rgba(247, 138, 50, 0.87) !important;
+}
+
+.navbar-nav .nav-link.active,.navbar-nav .nav-link.show {
+    color: rgb(255, 94, 0) !important;
+}
+
+
+.offcanvas-body .NavBarList a{
+    font-family: 'Gotham', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+}
+
+/* carosel css */
+.carouselCaptionItem-1 h5{
+    font-family: 'Gotham', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(6, 118, 60, 1);
+    box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 1);
+}
+.carouselCaptionItem-1 p{
+    font-family: 'Avenir',sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(83, 83, 83, 1); 
+    margin-top: 20px;
+}
+.carouselCaptionItem-1 a{
+    width: 116px;
+    height: 38px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 4px;
+    background: rgba(255, 205, 96, 1);
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 16px;
+    font-weight: 750;
+    line-height: 22px;
+    letter-spacing: 0em;
+    float: left;
+    color: rgba(6, 118, 60, 1);
+    margin-top: 10px;
+}
+.carousel-caption a:hover{
+    background: rgb(233, 174, 47);
+    color: rgb(1, 90, 44);
+}
+.carouselCaption{
+    align-items: center;
+    height: 760px;
+}
+.carouselCaptionItem-1{
+    width: 40%;
+}
+.carouselCaptionItem-2{
+    width: 60%;
+    height: 760px;
+}
+.carouselCaptionItem-2 img{
+    width: auto;
+    height: 760px;
+    margin-top: 20px !important;
+    margin-left: 20px;
+}
+.carousel-control-next,.carousel-control-prev {
+    opacity: unset;
+}
+.carousel-control-prev-icon {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    background-image: url("/images/HomePage/icons8-forward-100.png");
+    rotate: 180deg;
+}
+
+.carousel button:not(:disabled) {
+    cursor: pointer;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    background-color: rgb(1, 90, 44);
+    top: 50%;
+    margin: 0 3%;
+}
+.carousel-control-next-icon{
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    background-image: url("/images/HomePage/icons8-forward-100.png");
+}
+.carousel button:not(:disabled):hover{
+    color: #fff !important;
+    background-color: rgb(255, 153, 0);
+}
+
+
+/* about us section css */
+.aboutUsContainer{
+    background-color: rgba(252, 248, 230, 1);
+    padding-top: 90px;
+}
+.aboutUsHeading{
+    font-family: 'Gotham',sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+    margin: 0;
+}
+.aboutUsHeading-img{
+    margin-left: 51%;
+}
+.aboutUsFirstCol{
+    padding-top: 65px;
+}
+.aboutUsFirstCol span{
+    font-family: 'Gotham',sans-serif;
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(79, 121, 66, 1);
+}
+.aboutUsFirstCol h5{
+    font-family: 'Gotham',sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+    padding-right: 80px;
+}
+.aboutUsFirstCol p{
+    font-family: 'Avenir',sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-right: 20px;
+}
+.aboutUsFirstCol a{
+    width:116px;
+    height: 38px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 4px;
+    background-color: rgba(6, 118, 60, 1);
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 16px;
+    font-weight: 750;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+.aboutUsFirstCol a:hover{
+    background-color: rgb(10, 175, 90);
+    color: rgba(255, 255, 255, 1);
+}
+.aboutSecondContainer {
+    align-items: end;
+}
+
+.aboutImg-container{
+    display: flex;
+    justify-content: end;
+    padding-top: 20px;
+}
+
+/* vision & mission css */
+.visionMainContainer{
+    background-color: rgba(252, 248, 230, 1);
+    padding-top: 90px;
+}
+.visionContainer{
+    background-image: url("/images/HomePage/bg\ -\ Copy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 270px;
+}
+.missionTextCont{
+    padding-top: 56px;
+}
+.vissionImg-1{
+    padding:32px 0 0 20px;
+}
+.vissionImg-1 img{
+    width: 334px;
+    height: 210px;
+    border-radius: 4px;
+}
+    
+.missionTextCont h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 205, 96, 1);
+    margin: 0;
+}
+.missionTextCont img{
+    margin-left: 20%;
+}
+.missionTextCont p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    padding-right: 95px;
+}
+
+/* our array of Categories */
+.CategoriesCont{
+    background-color: rgba(252, 248, 230, 1);
+    padding-top: 101px;
+    padding-bottom: 130px;
+}
+.categoriesHeading h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+    margin-bottom: 0;
+}
+
+.categoriesHeading img{
+   margin-left: 59%;
+}
+.categoriesHeading p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(80, 80, 80, 1);
+    margin: 15px 0 50px 0;
+    padding:0 24% 0 24%;
+}
+
+.CategoriesCont .owlCarousel .item div{
+    background-image: url("/images/HomePage/image\ 12\ 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 193px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CategoriesCont .owlCarousel .item img{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.CategoriesCont .owlCarousel .item p{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(6, 118, 60, 1);
+    margin-top: 15px;
+}
+.owl-carousel .owl-nav {
+    margin-top: 30px;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    background: rgba(6, 118, 60, 1);
+    padding: 10!important;
+    width: 50px !important;
+    height: 50px !important;
+    position: absolute;
+    left: 45%;
+    border-radius: 50%;
+    color: #fff !important;
+}
+.owl-carousel .owl-nav button.owl-prev:hover {
+    background: rgb(255, 153, 0);
+    color: #fff !important;
+}
+.owl-carousel .owl-nav button.owl-next {
+    background: rgba(6, 118, 60, 1);
+    width: 50px !important;
+    height: 50px !important;
+    position: absolute;
+    right: 45%;
+    border-radius: 50%;
+    color: #fff !important;
+}
+.owl-carousel .owl-nav button.owl-next:hover {
+    background: rgb(255, 153, 0);
+    color: #fff !important;
+}
+
+.owl-carousel .owl-nav span{
+    font-size: 45px !important;
+    color: #fff !important;
+    line-height: 20px;
+}
+
+
+/* our brands css */
+.ourBrandsCont{
+    background: rgba(6, 118, 60, 1);
+    padding: 70px 0 90px 0;
+}
+.ourBrandsHeading h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 205, 96, 1);
+    margin: 50px 0 0 0;
+}
+.ourBrandsHeading img{
+    margin-left: 9%;
+}
+.ourBrandsHeading p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);    
+    margin: 20px 0 25px 0;
+    padding-right: 52% !important;
+}
+
+.ourBrandsCont a{
+    width: 95px;
+    height: 38px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 1);
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 16px;
+    font-weight: 750;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(6, 118, 60, 1);
+    margin-top: 22px;
+}
+.ourBrandsCont a:hover{
+    background: rgb(194, 193, 193);
+    color: rgba(6, 118, 60, 1);
+}
+
+
+/* our products css */
+.ourProductsCont{
+    background-color:rgba(252, 248, 230, 1);
+    padding-top: 100px;
+}
+
+.ourProductsHeading h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(6, 118, 60, 1);
+    margin-bottom: 0;
+}
+.ourProductsHeading img{
+    margin-left: 11%;
+}
+.ourProductsHeading p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(6, 118, 60, 1); 
+    margin: 10px 0 40px 0;  
+    padding: 0 28%; 
+}
+.ourProductsCard .outerCard{
+    width: 306px;
+    height: 368px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25);
+    box-shadow: 0px 30px 60px -30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+.ourProductsCard .innerCard{
+    width: 274px;
+    height: 332px;
+    border: 1px solid rgba(255, 205, 96, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ourProductsCard img{
+    width: 125px;
+    height: 125px;
+    cursor: pointer;
+}
+.ourProductsCard h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(6, 118, 60, 1);
+    margin-top: 30px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+}
+.ourProductsCard p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(128, 128, 128, 1);
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+}
+.ourProductsCont a{
+    width: 95px;
+    height: 38px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 4px;
+    background-color: rgba(6, 118, 60, 1);
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 16px;
+    font-weight: 750;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin: 50px 0 70px 0;
+}
+.ourProductsCont a:hover{
+    background-color: rgb(9, 172, 88);
+    color: rgba(255, 255, 255, 1);
+}
+
+/* our stores */
+.ourStoresCont{
+    background-color:rgba(252, 248, 230, 1);
+    padding-top:70px;
+}
+.ourStoresCard ul{
+    display: flex;
+    flex-direction: row;
+}
+.ourStoresHeading h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(6, 118, 60, 1);
+    margin-bottom: 0;
+}
+.ourStoresHeading img{
+    margin-left: 8%;
+}
+.ourStoresHeading p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(80, 80, 80, 1);
+    margin: 10px 0 40px 0;
+    padding:0 21% 0 21%;
+}
+.ourStoresCard li{
+    width: 416px;
+    height: 485px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25);
+    box-shadow: 0px 30px 60px -30px rgba(0, 0, 0, 0.3);
+}
+.ourStoresCard div{
+    padding: 15px 15px 0px 15px;
+}
+.ourStoresCard span div{
+    display: flex;
+    justify-content: center;
+}
+.ourStoresCard h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+}
+.ourStoresCard p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(128, 128, 128, 1);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+}
+.ourStoresCard button{
+    width: 100%;
+    height: 38px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 4px;
+    background-color: rgba(6, 118, 60, 1);
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 16px;
+    font-weight: 750;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+.ourStoresCard button:hover{
+    background-color: rgb(4, 156, 78);
+    color: rgba(255, 255, 255, 1);
+}
+
+.ourStoresViewBtn{
+    width: 95px;
+    height:38px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 4px;
+    background-color: rgba(6, 118, 60, 1);
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 16px;
+    font-weight: 750;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:rgba(255, 255, 255, 1);
+    margin: 20px 0 80px 0;
+}
+.ourStoresViewBtn:hover{
+    background-color: rgb(3, 151, 75);
+    color:rgba(255, 255, 255, 1);
+}
+
+/* footer css */
+.footerCont{
+    background-image: url("/images/HomePage/bg-footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0 50px 0;
+}
+.footerCol-1 p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    padding-right: 90px;
+}
+.footer-items .active {
+    color: rgb(255, 94, 0) !important;
+}
+.footerSocialIcons img{
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.footerCol-2 h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 205, 96, 1);
+}
+.footerCol-2 div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerCol-2 a{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.footerCol-3 h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 205, 96, 1);
+}
+.footerCol-3 svg{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    color: rgba(255, 205, 96, 1);
+}
+
+.footerCol-3 h5{
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 205, 96, 1);
+}
+.footerCol-3 a{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.horizontal-line {
+    border-top: 1px solid #fff; 
+    width: 100%;
+    margin: 10px 0; 
+}
+.lineContainer{
+    margin-top: 30px;
+}
+.lineContainer p{
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+/******* Hpme page css *******/
+    /* Header css */
+    .headerContainer{
+        height: 62px;
+    }
+    .NavBarList{
+        gap: 15px;
+    }
+    
+    .navbarCollapse li{
+        border-bottom: 1px solid rgb(145, 141, 141);
+        width: 100%;
+    }
+    .navbarCollapse li:first-child{
+        border-top: 1px solid rgb(145, 141, 141);
+        width: 100%;
+        padding-top: 20px;
+    }
+    .navbarCollapse ul{
+        margin-left: 0%;
+    }
+    .navbarCollapse li:last-child{
+        border-bottom: none;
+        width: 100%;
+    }
+    .navbarCollapse .NavBarList a{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+    }
+    
+    .navbarCollapse{
+        flex-grow: unset;
+        display: flex;
+        justify-content: start;
+    }
+
+    /* carosel css */
+    .carouselCaptionItem-1 h5{
+        font-size: 12px;
+        line-height: 15px;
+        text-align: left;
+        font-weight: 600;
+        margin-top: 25px !important;
+    }
+    .carouselCaptionItem-1 p{
+        font-size: 8px;
+        line-height: 13px;
+        text-align: left;
+        margin-top: 0px;
+    }
+    .carouselCaptionItem-1 a{
+        width: 70px;
+        height: 20px;
+        padding: 0;
+        font-size: 10px;
+        line-height: 20px;
+        float: left;
+        margin: 0;
+    }
+
+    .carouselCaption{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 200px;
+        width: 400px;
+        padding: 50px 50px 0 0;
+    }
+    .carouselCaptionItem-1{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .carouselCaptionItem-2 img{
+        width: auto;
+        height: 155px;
+        margin: 40px 50px 0 0 !important;
+        
+    }
+    .carouselCaptionItem-2{
+        width: 60%;
+        height: 200px;
+    }
+    .carousel button:not(:disabled) {
+        width: 30px !important;
+        height: 30px !important;
+        top: 40%;
+        margin: 0 3%;
+    }
+    .carousel-control-prev-icon {
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50%;
+        rotate: 180deg;
+    }
+    .carousel-control-next-icon{
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50%;
+    }
+
+    /* about section css */
+    .aboutUsContainer{
+        padding-top: 40px;
+    }
+    .aboutUsHeading{
+        font-size: 20px;
+    }
+    .aboutUsHeading-img{
+        margin-left: 17%;
+    }
+    .aboutUsFirstCol{
+        padding-top: 20px;
+    }
+    .aboutUsFirstCol span{
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .aboutUsFirstCol h5{
+        font-size: 20px;
+        line-height: 25px;
+        padding-right: 0px;
+    }
+    .aboutUsFirstCol p{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        padding-right: 0px;
+    }
+    .aboutUsFirstCol button{
+        width:100px;
+        height: 30px;
+        padding: 0px;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .aboutSecondContainer {
+        align-items: center;
+    }
+    .aboutImg-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    /* vision & mission css */
+    .visionMainContainer{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .visionContainer{
+        background-image: url("/images/HomePage/bg\ -\ Copy.png");
+        width: 100% !important;
+        height: auto;
+    }
+    .missionTextCont{
+        padding: 20px;
+    }
+    .vissionImg-1{
+        padding:5px;
+    }
+    .vissionImg-1 img{
+        width: 100%;
+        height: 210px;
+        margin-top: 10px;
+    }
+        
+    .missionTextCont h3{
+        font-size: 24px;
+        text-align: left;
+        margin: 0;
+    }
+    .missionTextCont img{
+        margin-left: 49%;
+    }
+    .missionTextCont p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        padding-right: 0px;
+    }
+    /* our array of Categories */
+    .CategoriesCont{
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .categoriesHeading h3{
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .categoriesHeading img{
+        margin-left: 78%;
+    }
+    .categoriesHeading p{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin: 10px 0 50px 0;
+        padding: 0px;
+    }
+    .CategoriesCont .owlCarousel .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CategoriesCont .owlCarousel .item div{
+        width: 135px;
+        height: 135px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CategoriesCont .owlCarousel .item img{
+        width: 80px;
+        height: 80px;
+    }
+    .CategoriesCont .owlCarousel .item p{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .owl-carousel .owl-nav {
+        margin-top: 15px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        padding: 0 !important;
+        width: 30px !important;
+        height: 30px !important;
+        left: 40%;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        padding: 0 !important;
+        width: 30px !important;
+        height: 30px !important;
+        right: 40%;
+    }
+    .owl-carousel .owl-nav span{
+        font-size: 25px !important;
+        color: #fff !important;
+        line-height: 20px;
+    }
+
+
+    /* our brands css */
+    .ourBrandsCont{
+        padding: 0px 0 40px 0;
+    }
+    .ourBrandsHeading h3{
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        margin: 50px 0 0 0;
+    }
+    .ourBrandsHeading img{
+        margin-left: 24%;
+    }
+    .ourBrandsHeading p{
+        font-size: 16px;
+        line-height: 25px;
+        text-align: left;
+        margin: 10px 0 30px 0;
+        padding-right: 10px !important;
+    }
+    .ourBrandsCont button{
+        width: 90px;
+        height: 30px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+
+    /* our products css */
+    .ourProductsCont{
+        padding-top: 70px;
+    }
+    .ourProductsHeading h3{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .ourProductsHeading img{
+        margin-left: 32%;
+    }
+    .ourProductsHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;  
+        padding: 0%; 
+    }
+    .ourProductsCard{
+        display: flex;
+        justify-content: center;
+    }
+    .ourProductsCard .outerCard{
+        width: 90%;
+        height: 384px;
+        margin: 0;
+    }
+    .ourProductsCard .innerCard{
+        width: 90%;
+        height: 332px;
+    }
+    .ourProductsCard img{
+        width: 125px;
+        height: 125px;
+    }
+    .ourProductsCard h3{
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .ourProductsCard p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .ourProductsCont button{
+        width: 90px;
+        height: 30px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin: 40px 0 30px 0;
+    }
+
+    /* our stores */
+    .ourStoresCont{
+        padding-top:60px;
+    }
+    .ourStoresCard ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .ourStoresHeading h3{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .ourStoresHeading img{
+        margin-left: 22%;
+    }
+    .ourStoresHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;
+        padding: 0;
+    }
+    .ourStoresCard li{
+        width: 100%;
+        height: 425px;
+    }
+    .ourStoresCard div{
+        padding: 15px 15px 0px 15px;
+    }
+    .ourStoresCard h3{
+        font-size: 18px;
+        line-height: 33px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .ourStoresCard p{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+    }
+    .ourStoresCard button{
+        width: 100%;
+        height: 30px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .ourStoresViewBtn{
+        width: 90px;
+        height:30px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin: 25px 0 70px 0;
+    }
+
+    /* footer css */
+    .footerCont{
+        padding: 30px 0 0 0;
+    } 
+    .footerCol-1 p{
+        font-size: 16px;
+        line-height: 25px;
+        text-align: left;
+        margin-top: 20px;
+        padding: 0;
+    }
+    .footerSocialIcons img{
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .footerCol-2 h3{
+        font-size: 20px;
+        line-height: 36px;
+        text-align: left;
+    }
+    .footerCol-2 div{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .footerCol-2 a{
+        font-size: 15px;
+        line-height: 20px;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    .footerCol-3 h3{
+        font-size: 20px;
+        line-height: 36px;
+        text-align: left;
+    }
+    .footerCol-3 img{
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+    }
+
+    .footerCol-3 h5{
+        font-size: 15px;
+        line-height: 24px;
+        text-align: left;
+    }
+    .footerCol-3 a{
+        font-size: 15px;
+        line-height: 20px;
+        text-align: left;
+        text-decoration: none;
+    }
+    .horizontal-line {
+        border-top: 1px solid #fff; 
+        width: 100%;
+        margin: 10px; 
+    }
+    .lineContainer{
+        margin-top: 20px;
+    }
+    .lineContainer p{
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+/******* Hpme page css *******/
+    /* Header css */
+    .headerContainer{
+        height: 62px;
+    }
+    .NavBarList{
+        gap: 20px;
+    }
+    
+    .navbarCollapse li{
+        border-bottom: 1px solid rgb(145, 141, 141);
+        width: 100%;
+    }
+    .navbarCollapse li:first-child{
+        border-top: 1px solid rgb(145, 141, 141);
+        width: 100%;
+        padding-top: 20px;
+    }
+    .navbarCollapse ul{
+        margin-left: 0%;
+    }
+    .navbarCollapse li:last-child{
+        border-bottom: none;
+        width: 100%;
+    }
+    .navbarCollapse .NavBarList a{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+    }
+    
+    .navbarCollapse{
+        flex-grow: unset;
+        display: flex;
+        justify-content: start;
+    }
+
+    /* carosel css */
+    .carouselCaptionItem-1 h5{
+        font-size: 12px;
+        line-height: 15px;
+        text-align: left;
+        font-weight: 600;
+        margin-top: 25px !important;
+    }
+    .carouselCaptionItem-1 p{
+        font-size: 8px;
+        line-height: 13px;
+        text-align: left;
+        margin-top: 0px;
+    }
+    .carouselCaptionItem-1 a{
+        width: 70px;
+        height: 20px;
+        padding: 0;
+        font-size: 10px;
+        line-height: 20px;
+        float: left;
+        margin: 0;
+    }
+
+    .carouselCaption{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 200px;
+        width: 400px;
+        padding: 50px 50px 0 0;
+    }
+    .carouselCaptionItem-1{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .carouselCaptionItem-2{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+    .carouselCaptionItem-2 img{
+        width: auto;
+        height: 165px;
+        margin: 30px 20px 0 0 !important;
+        
+    }
+    .carouselCaptionItem-2{
+        width: 60%;
+        height: 200px;
+    }
+    .carousel button:not(:disabled) {
+        width: 30px !important;
+        height: 30px !important;
+        top: 40%;
+        margin: 0 3%;
+    }
+    .carousel-control-prev-icon {
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50%;
+        rotate: 180deg;
+    }
+    .carousel-control-next-icon{
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50%;
+    }
+
+    /* about us section css */
+    .aboutUsContainer{
+        padding-top: 40px;
+    }
+    .aboutUsHeading{
+        font-size: 20px;
+    }
+    .aboutUsHeading-img{
+        margin-left: 17%;
+    }
+    .aboutUsFirstCol{
+        padding-top: 20px;
+    }
+    .aboutUsFirstCol span{
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .aboutUsFirstCol h5{
+        font-size: 20px;
+        line-height: 25px;
+        padding: 0;
+    }
+    .aboutUsFirstCol p{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        padding-right: 0;
+    }
+    .aboutUsFirstCol button{
+        width:100px;
+        height: 30px;
+        padding: 0px;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .aboutSecondContainer {
+        align-items: center;
+    }
+    .aboutImg-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    /* vision & mission css */
+    .visionMainContainer{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .visionContainer{
+        background-image: url("/images/HomePage/bg\ -\ Copy.png");
+        width: 100% !important;
+        height: auto;
+    }
+    .missionTextCont{
+        padding: 20px;
+    }
+    .vissionImg-1{
+        padding:5px;
+    }
+    .vissionImg-1 img{
+        width: 100%;
+        height: 210px;
+        margin-top: 10px;
+    }
+        
+    .missionTextCont h3{
+        font-size: 24px;
+        text-align: left;
+        margin: 0;
+    }
+    .missionTextCont img{
+        margin-left: 49%;
+    }
+    .missionTextCont p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        padding-right: 0;
+    }
+    /* our array of Categories */
+    .CategoriesCont{
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .categoriesHeading h3{
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .categoriesHeading img{
+        margin-left: 78%;
+    }
+    .categoriesHeading p{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin: 10px 0 50px 0;
+        padding: 0;
+    }
+    .CategoriesCont .owlCarousel .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CategoriesCont .owlCarousel .item div{
+        width: 145px;
+        height: 145px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CategoriesCont .owlCarousel .item img{
+        width: 80px;
+        height: 80px;
+    }
+    .CategoriesCont .owlCarousel .item p{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .owl-carousel .owl-nav {
+        margin-top: 15px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        padding: 10!important;
+        width: 35px !important;
+        height: 35px !important;
+        left: 40%;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        padding: 50!important;
+        width: 35px !important;
+        height: 35px !important;
+        right: 40%;
+    }
+    .owl-carousel .owl-nav span{
+        font-size: 25px !important;
+        color: #fff !important;
+        line-height: 20px;
+    }
+
+    /* our brands css */
+    .ourBrandsCont{
+        padding: 0px 0 40px 0;
+    }
+    .ourBrandsHeading h3{
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        margin: 50px 0 0 0;
+    }
+    .ourBrandsHeading img{
+        margin-left: 24%;
+    }
+    .ourBrandsHeading p{
+        font-size: 16px;
+        line-height: 25px;
+        text-align: left;
+        margin: 10px 0 30px 0;
+        padding-right: 0;
+    }
+    .ourBrandsCont button{
+        width: 90px;
+        height: 30px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+
+    /* our products css */
+    .ourProductsCont{
+        padding-top: 70px;
+    }
+    .ourProductsHeading h3{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .ourProductsHeading img{
+        margin-left: 32%;
+    }
+    .ourProductsHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;  
+        padding: 0; 
+    }
+    .ourProductsCard{
+        display: flex;
+        justify-content: center;
+    }
+    .ourProductsCard .outerCard{
+        width: 90%;
+        height: 384px;
+        margin: 0;
+    }
+    .ourProductsCard .innerCard{
+        width: 90%;
+        height: 332px;
+    }
+    .ourProductsCard img{
+        width: 125px;
+        height: 125px;
+    }
+    .ourProductsCard h3{
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .ourProductsCard p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .ourProductsCont button{
+        width: 90px;
+        height: 30px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin: 40px 0 30px 0;
+    }
+
+    /* our stores */
+    .ourStoresCont{
+        padding-top:60px;
+    }
+    .ourStoresCard ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .ourStoresHeading h3{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .ourStoresHeading img{
+        margin-left: 22%;
+    }
+    .ourStoresHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;
+        padding: 0;
+    }
+    .ourStoresCard li{
+        width: 100%;
+        height: auto;
+    }
+    .ourStoresCard div{
+        padding: 15px 15px 0px 15px;
+    }
+    .ourStoresCard h3{
+        font-size: 18px;
+        line-height: 33px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .ourStoresCard p{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+    }
+    .ourStoresCard button{
+        width: 100%;
+        height: 30px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .ourStoresViewBtn{
+        width: 90px;
+        height:30px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin: 25px 0 70px 0;
+    }
+
+    /* footer css */
+    .footerCont{
+        padding: 30px 0 0 0;
+    } 
+    .footerCol-1 p{
+        font-size: 16px;
+        line-height: 25px;
+        text-align: left;
+        margin-top: 20px;
+        padding: 0;
+    }
+    .footerSocialIcons img{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .footerCol-2 h3{
+        font-size: 20px;
+        line-height: 36px;
+        text-align: left;
+    }
+    .footerCol-2 div{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .footerCol-2 a{
+        font-size: 15px;
+        line-height: 20px;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    .footerCol-3 h3{
+        font-size: 20px;
+        line-height: 36px;
+        text-align: left;
+    }
+    .footerCol-3 img{
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+    }
+
+    .footerCol-3 h5{
+        font-size: 15px;
+        line-height: 24px;
+        text-align: left;
+    }
+    .footerCol-3 a{
+        font-size: 15px;
+        line-height: 20px;
+        text-align: left;
+        text-decoration: none;
+    }
+    .horizontal-line {
+        border-top: 1px solid #fff; 
+        width: 100%;
+        margin: 10px; 
+    }
+    .lineContainer{
+        margin-top: 20px;
+    }
+    .lineContainer p{
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/******* Hpme page css *******/
+    /* Header css */
+    .headerContainer{
+        height: 72px;
+    }
+    .NavBarList{
+        gap: 30px;
+    }
+    .navbarCollapse li{
+        border-bottom: 1px solid rgb(145, 141, 141);
+        width: 100%;
+    }
+    .navbarCollapse li:first-child{
+        border-top: 1px solid rgb(145, 141, 141);
+        width: 100%;
+        padding-top: 20px;
+    }
+    .navbarCollapse ul{
+        margin-left: 0%;
+    }
+    .navbarCollapse li:last-child{
+        border-bottom: none;
+        width: 100%;
+    }
+    .navbarCollapse .NavBarList a{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+    }
+    
+    .navbarCollapse{
+        flex-grow: unset;
+        display: flex;
+        justify-content: start;
+    }
+
+    /* carosel css */
+    .carouselCaptionItem-1 h5{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+        font-weight: 600;
+        margin-top: 25px !important;
+        padding-right: 50px;
+    }
+    .carouselCaptionItem-1 p{
+        font-size: 12px;
+        line-height: 18px;
+        text-align: left;
+        margin-top: 0px;
+        padding-right: 50px;
+    }
+    .carouselCaptionItem-1 a{
+        width: 75px;
+        height: 28px;
+        padding: 0;
+        font-size: 12px;
+        line-height: 26px;
+        float: left;
+        margin: 0;
+    }
+
+    .carouselCaption{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        padding:0;
+    }
+    .carouselCaptionItem-1{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .carouselCaptionItem-2{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+    .carouselCaptionItem-2 img{
+        width: auto;
+        height: 290px;
+        margin: 62px 60px 0 0 !important;
+        
+    }
+    .carouselCaptionItem-2{
+        width: 60%;
+        height: 350px;
+    }
+    .carousel button:not(:disabled) {
+        width: 40px !important;
+        height: 40px !important;
+        top: 40%;
+        margin: 0 3%;
+    }
+    .carousel-control-prev-icon {
+        width: 15px !important;
+        height: 15px !important;
+        border-radius: 50%;
+        rotate: 180deg;
+    }
+    .carousel-control-next-icon{
+        width: 15px !important;
+        height: 15px !important;
+        border-radius: 50%;
+    }
+
+    /* about us section css */
+    .aboutUsContainer{
+        padding-top: 50px;
+    }
+    .aboutUsHeading{
+        font-size: 22px;
+    }
+    .aboutUsHeading-img{
+        margin-left: 10%;
+    }
+    .aboutUsFirstCol{
+        padding-top: 25px;
+    }
+    .aboutUsFirstCol span{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .aboutUsFirstCol h5{
+        font-size: 22px;
+        line-height: 30px;
+        padding: 0;
+    }
+    .aboutUsFirstCol p{
+        font-size: 15px;
+        line-height: 25px;
+        text-align: left;
+        padding-right: 0;
+    }
+    .aboutUsFirstCol button{
+        width:100px;
+        height: 35px;
+        padding: 0px;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .aboutSecondContainer {
+        align-items: center;
+    }
+    .aboutImg-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    /* vision & mission css */
+    .visionMainContainer{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .visionContainer{
+        background-image: url("/images/HomePage/bg\ -\ Copy.png");
+        width: 100% !important;
+        height: auto;
+    }
+    .missionTextCont{
+        padding: 20px;
+    }
+    .vissionImg-1{
+        padding:5px;
+    }
+    .vissionImg-1 img{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+        
+    .missionTextCont h3{
+        font-size: 24px;
+        text-align: left;
+        margin: 0;
+    }
+    .missionTextCont img{
+        margin-left: 25%;
+    }
+    .missionTextCont p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        padding-right: 0;
+    }
+    /* our array of Categories */
+    .CategoriesCont{
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+    .categoriesHeading h3{
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 0;
+        line-height: 3px;
+    }
+    .categoriesHeading img{
+        margin-left: 68%;
+    }
+    .categoriesHeading p{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        margin: 10px 0 50px 0;
+        padding: 0 6%; 
+    }
+    .CategoriesCont .owlCarousel .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CategoriesCont .owlCarousel .item div{
+        width: 145px;
+        height: 145px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CategoriesCont .owlCarousel .item img{
+        width: 80px;
+        height: 80px;
+    }
+    .CategoriesCont .owlCarousel .item p{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .owl-carousel .owl-nav {
+        margin-top: 15px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        padding: 10!important;
+        width: 40px !important;
+        height: 40px !important;
+        left: 42%;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        padding: 50!important;
+        width: 40px !important;
+        height: 40px !important;
+        right: 42%;
+    }
+    .owl-carousel .owl-nav span{
+        font-size: 35px !important;
+        color: #fff !important;
+        line-height: 20px;
+    }
+    /* our brands css */
+    .ourBrandsCont{
+        padding: 0px 0 40px 0;
+    }
+    .ourBrandsHeading h3{
+        font-size: 22px;
+        font-weight: 400;
+        text-align: left;
+        margin: 50px 0 0 0;
+    }
+    .ourBrandsHeading img{
+        margin-left: 15%;
+    }
+    .ourBrandsHeading p{
+        font-size: 16px;
+        line-height: 25px;
+        text-align: left;
+        margin: 10px 0 30px 0;
+        padding-right: 11%;
+    }
+    .ourBrandsCont button{
+        width: 95px;
+        height: 35px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+
+    /* our products css */
+    .ourProductsCont{
+        padding-top: 70px;
+    }
+    .ourProductsHeading h3{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .ourProductsHeading img{
+        margin-left: 16%;
+    }
+    .ourProductsHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;  
+        padding: 0 10%; 
+    }
+    .ourProductsCard{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    .ourProductsCard .outerCard{
+        width: 48%;
+        height: 384px;
+        margin: 0 !important;
+    }
+    .ourProductsCard .innerCard{
+        width: 90%;
+        height: 332px;
+    }
+    .ourProductsCard img{
+        width: 125px;
+        height: 125px;
+    }
+    .ourProductsCard h3{
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .ourProductsCard p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .ourProductsCont button{
+        width: 90px;
+        height: 30px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin: 40px 0 30px 0;
+    }
+
+    /* our stores */
+    .ourStoresCont{
+        padding-top:60px;
+    }
+    .ourStoresCard ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ourStoresHeading h3{
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .ourStoresHeading img{
+        margin-left: 11%;
+    }
+    .ourStoresHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;
+        padding: 0 15%; 
+    }
+    .ourStoresCard li{
+        width: 90%;
+        height: auto;
+    }
+    .ourStoresCard li img{
+        width: 100%;
+        height: auto;
+    }
+    .ourStoresCard div{
+        padding: 10px 15px 10px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ourStoresCard h3{
+        font-size: 20px;
+        line-height: 33px;
+        text-align: left;
+        margin-top: 0px;
+        padding-left: 10px;
+    }
+    .ourStoresCard p{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+        padding-left: 10px;
+        margin-bottom: 5px;
+    }
+    .ourStoresCard span{
+        padding-left: 10px;
+    }
+    
+    .ourStoresCard button{
+        width: 95%;
+        height: 30px;
+        padding: 0;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        margin-left: 7PX;
+    }
+    .ourStoresViewBtn{
+        width: 95px;
+        height:35px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+        margin: 25px 0 70px 0;
+    }
+
+    /* footer css */
+    .footerCont{
+        padding: 50px 0 50px 0;
+    } 
+    .footerCol-1 p{
+        font-size: 16px;
+        line-height: 25px;
+        text-align: left;
+        margin-top: 20px;
+        padding: 0;
+    }
+    .footerSocialIcons img{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .footerCol-2 h3{
+        font-size: 22px;
+        line-height: 36px;
+        text-align: left;
+    }
+    .footerCol-2 div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footerCol-2 a{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    .footerCol-3 h3{
+        font-size: 22px;
+        line-height: 36px;
+        text-align: left;
+    }
+    .footerCol-3 img{
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+    }
+
+    .footerCol-3 h5{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+    }
+    .footerCol-3 a{
+        font-size: 15px;
+        line-height: 20px;
+        text-align: left;
+        text-decoration: none;
+    }
+    .horizontal-line {
+        border-top: 1px solid #fff; 
+        width: 100%;
+        margin: 10px; 
+    }
+    .lineContainer{
+        margin-top: 20px;
+    }
+    .lineContainer p{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1439px) {
+/******* Hpme page css *******/
+    /* Header css */
+    .headerContainer{
+        height: 72px;    
+    }
+    .NavBarList{
+        gap: 10px;
+    }
+    .offcanvas-body a{
+        font-family: 'Gotham', sans-serif;
+        font-size: 14px !important;
+        font-weight: 400;
+        line-height: 25px !important;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(6, 118, 60, 1);
+    }
+
+    /* carosel css */
+    .carouselCaptionItem-1 h5{
+        font-size: 30px;
+        line-height: 39px;
+        text-align: left;
+        font-weight: 600;
+        margin-top: 25px !important;
+        padding-right: 50px;
+    }
+    .carouselCaptionItem-1 p{
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+        margin-top: 0px;
+        padding-right: 50px;
+        margin-top: 8px;
+    }
+    .carouselCaptionItem-1 button{
+        width: 109px;
+        height: 38px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 22px;
+        float: left;
+        margin-top: 10px;
+    }
+
+    .carouselCaption{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        padding:0;
+    }
+    .carouselCaptionItem-1{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .carouselCaptionItem-2{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+    .carouselCaptionItem-2 img{
+        width: auto;
+        height: 410px;
+        margin: 40px 60px 0 0 !important; 
+    }
+    .carouselCaptionItem-2{
+        width: 60%;
+        height: 400px;
+    }
+    .carousel button:not(:disabled) {
+        width: 50px !important;
+        height: 50px !important;
+        top: 40%;
+        margin: 0 3%;
+    }
+    .carousel-control-prev-icon {
+        width: 15px !important;
+        height: 15px !important;
+        border-radius: 50%;
+        rotate: 180deg;
+    }
+    .carousel-control-next-icon{
+        width: 15px !important;
+        height: 15px !important;
+        border-radius: 50%;
+    }
+
+    /* about us section css */
+    .aboutUsContainer{
+        padding-top: 80px;
+    }
+    .aboutUsHeading{
+        font-size: 24px;
+    }
+    .aboutUsHeading-img{
+        margin-left: 51%;
+    }
+    .aboutUsFirstCol{
+        padding-top: 95px;
+    }
+    .aboutUsFirstCol span{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .aboutUsFirstCol h5{
+        font-size: 32px;
+        line-height: 45px;
+        padding-right: 100px;
+    }
+    .aboutUsFirstCol p{
+        font-size: 18px;
+        line-height: 27px;
+        text-align: left;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+    .aboutUsFirstCol button{
+        width:110px;
+        height: 38px;
+        padding: 0px;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .aboutSecondContainer {
+        align-items: end;
+    }
+    .aboutImg-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    /* vision & mission css */
+    .visionMainContainer{
+        padding-top: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .visionContainer{
+        background-image: url("/images/HomePage/bg\ -\ Copy.png");
+        width: 100% !important;
+        height: auto;
+    }
+    .missionTextCont{
+        padding: 20px;
+    }
+    .vissionImg-1{
+        padding: 35px 0px 0px 20px;
+    }
+    .vissionImg-1 img{
+        width: 100%;
+        height: auto;
+    }
+    .missionTextCont h3{
+        font-size: 24px;
+        text-align: left;
+        margin: 0;
+    }
+    .missionTextCont img{
+        margin-left: 28%;
+    }
+    .missionTextCont p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        padding: 0px;
+    }
+
+    /* our array of Categories */
+    .CategoriesCont{
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+    .categoriesHeading h3{
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 0;
+        line-height: 3px;
+    }
+    .categoriesHeading img{
+        margin-left: 64%;
+    }
+    .categoriesHeading p{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        margin: 10px 0 50px 0;
+        padding:0 18% 0 18%;
+    }
+    .CategoriesCont .owlCarousel .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CategoriesCont .owlCarousel .item div{
+        width: 128px;
+        height: 128px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CategoriesCont .owlCarousel .item img{
+        width: 75.99px;
+        height: 75.06px;
+    }
+    .CategoriesCont .owlCarousel .item p{
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .owl-carousel .owl-nav {
+        margin-top: 30px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        padding: 10!important;
+        width: 45px !important;
+        height: 45px !important;
+        left: 44%;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        padding: 50!important;
+        width: 45px !important;
+        height: 45px !important;
+        right: 44%;
+    }
+    /* our brands css */
+    .ourBrandsCont{
+        padding: 45px 0 80px 0;
+    }
+    .ourBrandsHeading h3{
+        font-size: 24px;
+        margin: 50px 0 0 0;
+    }
+    .ourBrandsHeading img{
+        margin-left: 12%;
+    }
+    .ourBrandsHeading p{
+        font-size: 18px;
+        line-height: 25px;
+        text-align: left;
+        margin: 10px 0 30px 0;
+        padding-right: 28%;
+    }
+    .ourBrandsCont button{
+        width: 95px;
+        height: 38px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+
+    /* our products css */
+    .ourProductsCont{
+        padding-top: 100px;
+    }
+    .ourProductsHeading h3{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .ourProductsHeading img{
+        margin-left: 13%;
+    }
+    .ourProductsHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;  
+        padding: 0 20%; 
+    }
+    .ourProductsCard{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    .ourProductsCard .outerCard{
+        width: 23%;
+        height: 340px;
+        margin: 0 !important;
+    }
+    .ourProductsCard .innerCard{
+        width: 95%;
+        height: 302px;
+    }
+    .ourProductsCard img{
+        width: 100px;
+        height: 100px;
+    }
+    .ourProductsCard h3{
+        font-size: 18px;
+        line-height: 34px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .ourProductsCard p{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .ourProductsCont button{
+        width: 95px;
+        height: 38px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 50px 0 30px 0;
+    }
+
+    /* our stores */
+    .ourStoresCont{
+        padding-top:70px;
+    }
+    .ourStoresCard ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .ourStoresHeading h3{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .ourStoresHeading img{
+        margin-left: 9%;
+    }
+    .ourStoresHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;
+        padding:0 16% 0 16%;
+    }
+    .ourStoresCard li{
+        width: 32%;
+        height: auto;
+    }
+    .ourStoresCard li img{
+        width: 100%;
+        height: auto;
+    }
+    .ourStoresCard div{
+        padding: 15px 15px 15px 15px;
+    }
+    .ourStoresCard h3{
+        font-size: 18px;
+        line-height: 33px;
+        text-align: left;
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+    .ourStoresCard p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        padding-left: 0px;
+    }
+    .ourStoresCard span{
+        padding-left: 0px;
+    }
+    
+    .ourStoresCard button{
+        width: 100%;
+        height: 38px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin-left: 0PX;
+    }
+    .ourStoresViewBtn{
+        width: 95px;
+        height:38px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 35px;
+        text-align: center;
+        margin: 25px 0 80px 0;
+    }
+
+    /* footer css */
+    .footerCont{
+        padding: 50px 0 50px 0;
+    } 
+    .footerCol-1 p{
+        font-size: 18px;
+        line-height: 25px;
+        text-align: left;
+        margin-top: 20px;
+        margin-top: 20px;
+        padding-right: 60px;
+    }
+    .footerSocialIcons img{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .footerCol-2 h3{
+        font-size: 24px;
+        line-height: 36px;
+        text-align: left;
+    }
+    .footerCol-2 div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footerCol-2 a{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    .footerCol-3 h3{
+        font-size: 24px;
+        line-height: 36px;
+        text-align: left;
+    }
+    .footerCol-3 img{
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .footerCol-3 h5{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+    }
+    .footerCol-3 a{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+        text-decoration: none;
+    }
+    .horizontal-line {
+        border-top: 1px solid #fff; 
+        width: 100%;
+        margin: 10px; 
+    }
+    .lineContainer{
+        margin-top: 30px;
+    }
+    .lineContainer p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+/******* Hpme page css *******/
+    /* Header css */
+    .headerContainer{
+        height: 72px;    
+    }
+    .NavBarList{
+        gap: 10px;
+    }
+    .offcanvas-body a{
+        font-family: 'Gotham', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 10px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(6, 118, 60, 1);
+    }
+
+    /* carosel css */
+    .carouselCaptionItem-1 h5{
+        font-size: 30px;
+        line-height: 39px;
+        text-align: left;
+        font-weight: 600;
+        margin-top: 25px !important;
+        padding-right: 50px;
+    }
+    .carouselCaptionItem-1 p{
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+        margin-top: 0px;
+        padding-right: 50px;
+        margin-top: 8px;
+    }
+    .carouselCaptionItem-1 button{
+        width: 109px;
+        height: 38px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 22px;
+        float: left;
+        margin-top: 10px;
+    }
+
+    .carouselCaption{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        padding:0;
+    }
+    .carouselCaptionItem-1{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .carouselCaptionItem-2{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+    .carouselCaptionItem-2 img{
+        width: auto;
+        height: 570px;
+        margin: 10px 60px 0 0 !important; 
+    }
+    .carouselCaptionItem-2{
+        width: 60%;
+        height: 450px;
+    }
+    .carousel button:not(:disabled) {
+        width: 50px !important;
+        height: 50px !important;
+        top: 40%;
+        margin: 0 3%;
+    }
+    .carousel-control-prev-icon {
+        width: 15px !important;
+        height: 15px !important;
+        border-radius: 50%;
+        rotate: 180deg;
+    }
+    .carousel-control-next-icon{
+        width: 15px !important;
+        height: 15px !important;
+        border-radius: 50%;
+    }
+ 
+    /* about us section css */
+    .aboutUsContainer{
+        padding-top: 80px;
+    }
+    .aboutUsHeading{
+        font-size: 24px;
+    }
+    .aboutUsHeading-img{
+        margin-left: 51%;
+    }
+    .aboutUsFirstCol{
+        padding-top: 95px;
+    }
+    .aboutUsFirstCol span{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .aboutUsFirstCol h5{
+        font-size: 32px;
+        line-height: 45px;
+        padding-right: 170px;
+    }
+    .aboutUsFirstCol p{
+        font-size: 18px;
+        line-height: 27px;
+        text-align: left;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+    .aboutUsFirstCol button{
+        width:110px;
+        height: 38px;
+        padding: 0px;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .aboutSecondContainer {
+        align-items: end;
+    }
+    .aboutImg-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    /* vision & mission css */
+    .visionMainContainer{
+        padding-top: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .visionContainer{
+        background-image: url("/images/HomePage/bg\ -\ Copy.png");
+        width: 100% !important;
+        height: auto;
+    }
+    .missionTextCont{
+        padding: 20px;
+    }
+    .vissionImg-1{
+        padding: 15px 0px 15px 5px;
+    }
+    .vissionImg-1 img{
+        width: 100%;
+        height: auto;
+    }
+    .missionTextCont h3{
+        font-size: 24px;
+        text-align: left;
+        margin: 0;
+    }
+    .missionTextCont img{
+        margin-left: 20%;
+    }
+    .missionTextCont p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        padding-right: 95px;
+    }
+
+    /* our array of Categories */
+    .CategoriesCont{
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+    .categoriesHeading h3{
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 0;
+        line-height: 3px;
+    }
+    .categoriesHeading img{
+        margin-left: 60%;
+    }
+    .categoriesHeading p{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        margin: 10px 0 50px 0;
+        padding:0 22% 0 22%;
+    }
+    .CategoriesCont .owlCarousel .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CategoriesCont .owlCarousel .item div{
+        width: 140px;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CategoriesCont .owlCarousel .item img{
+        width: 75.99px;
+        height: 75.06px;
+    }
+    .CategoriesCont .owlCarousel .item p{
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .owl-carousel .owl-nav {
+        margin-top: 30px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        padding: 10!important;
+        width: 45px !important;
+        height: 45px !important;
+        left: 46%;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        padding: 50!important;
+        width: 45px !important;
+        height: 45px !important;
+        right: 46%;
+    }
+
+    /* our brands css */
+    .ourBrandsCont{
+        padding: 45px 0 80px 0;
+    }
+    .ourBrandsHeading h3{
+        font-size: 24px;
+        margin: 50px 0 0 0;
+    }
+    .ourBrandsHeading img{
+        margin-left: 9%;
+    }
+    .ourBrandsHeading p{
+        font-size: 18px;
+        line-height: 25px;
+        text-align: left;
+        margin: 10px 0 30px 0;
+        padding-right: 48%;
+    }
+    .ourBrandsCont button{
+        width: 95px;
+        height: 38px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+
+    /* our products css */
+    .ourProductsCont{
+        padding-top: 100px;
+    }
+    .ourProductsHeading h3{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .ourProductsHeading img{
+        margin-left: 11%;
+    }
+    .ourProductsHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;  
+        padding: 0 28%; 
+    }
+    .ourProductsCard{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    .ourProductsCard .outerCard{
+        width: 23%;
+        height: 340px;
+        margin: 0 !important;
+    }
+    .ourProductsCard .innerCard{
+        width: 95%;
+        height: 302px;
+    }
+    .ourProductsCard img{
+        width: 110px;
+        height: 110px;
+    }
+    .ourProductsCard h3{
+        font-size: 22px;
+        line-height: 34px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .ourProductsCard p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .ourProductsCont button{
+        width: 95px;
+        height: 38px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 50px 0 30px 0;
+    }
+
+    /* our stores */
+    .ourStoresCont{
+        padding-top:70px;
+    }
+    .ourStoresCard ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .ourStoresHeading h3{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .ourStoresHeading img{
+        margin-left: 9%;
+    }
+    .ourStoresHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;
+        padding:0 21% 0 21%;
+    }
+    .ourStoresCard li{
+        width: 32%;
+        height: auto;
+    }
+    .ourStoresCard li img{
+        width: 100%;
+        height: auto;
+    }
+    .ourStoresCard div{
+        padding: 15px 15px 15px 15px;
+    }
+    .ourStoresCard h3{
+        font-size: 22px;
+        line-height: 33px;
+        text-align: left;
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+    .ourStoresCard p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        padding-left: 0px;
+    }
+    .ourStoresCard span{
+        padding-left: 0px;
+    }
+    
+    .ourStoresCard button{
+        width: 100%;
+        height: 38px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin-left: 0PX;
+    }
+    .ourStoresViewBtn{
+        width: 95px;
+        height:38px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 35px;
+        text-align: center;
+        margin: 25px 0 80px 0;
+    }
+
+    /* footer css */
+    .footerCont{
+        padding: 50px 0 50px 0;
+    } 
+    .footerCol-1 p{
+        font-size: 18px;
+        line-height: 25px;
+        text-align: left;
+        margin-top: 20px;
+        margin-top: 20px;
+        padding-right: 60px;
+    }
+    .footerCol-2 h3{
+        font-size: 24px;
+        line-height: 36px;
+        text-align: left;
+    }
+    .footerCol-2 div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footerCol-2 a{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    .footerCol-3 h3{
+        font-size: 24px;
+        line-height: 36px;
+        text-align: left;
+    }
+    .footerCol-3 img{
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .footerCol-3 h5{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+    }
+    .footerCol-3 a{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+        text-decoration: none;
+    }
+    .horizontal-line {
+        border-top: 1px solid #fff; 
+        width: 100%;
+        margin: 10px; 
+    }
+    .lineContainer{
+        margin-top: 30px;
+    }
+    .lineContainer p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+}
+
+
+/****** Navigation of all Pages Css ******/
+.NavigationCont{
+    background-image: url("/images/AboutPage/Internal\ Pages\ Header\ Image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.NavigationCont .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+.NavigationCont .container h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 205, 96, 1);
+}
+.NavigationCont .container div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+.NavigationCont .container div img{
+   height: 12px;
+   width: 12px;
+}
+
+.NavigationCont .container a{
+    font-family: 'Gotham', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);    
+    text-decoration: none;
+}
+.NavigationCont .container a:hover{
+    color: rgb(255, 123, 0);
+}
+
+.NavigationCont .container p{
+    font-family: 'Gotham', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 205, 96, 1);    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+/****** Navigation of all Pages Css ******/
+    .NavigationCont .container{
+        height: 150px;
+    }
+    .NavigationCont .container h3{
+        font-size: 20px;
+    }
+
+    .NavigationCont .container a{
+        font-size: 16px;
+    }
+
+    .NavigationCont .container span{
+        font-size: 16px;
+    }
+    .NavigationCont .container p{
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+    /****** Navigation of all Pages Css ******/
+    .NavigationCont .container{
+        height: 150px;
+    }
+    .NavigationCont .container h3{
+        font-size: 20px;
+    }
+
+    .NavigationCont .container a{
+        font-size: 16px;
+    }
+
+    .NavigationCont .container span{
+        font-size: 16px;
+    }
+    .NavigationCont .container p{
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/****** Navigation of all Pages Css ******/
+    .NavigationCont .container{
+        height: 200px;
+    }
+    .NavigationCont .container h3{
+        font-size: 22px;
+    }
+
+    .NavigationCont .container a{
+        font-size: 17px;
+    }
+
+    .NavigationCont .container span{
+        font-size: 17px;
+    }
+    .NavigationCont .container p{
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+/****** Navigation of all Pages Css ******/
+    .NavigationCont .container{
+        height: 250px;
+    }
+    .NavigationCont .container h3{
+        font-size: 24px;
+    }
+
+    .NavigationCont .container a{
+        font-size: 18px;
+    }
+
+    .NavigationCont .container span{
+        font-size: 18px;
+    }
+    .NavigationCont .container p{
+        font-size: 18px;
+    }
+}
+
+
+/************ about us page css ************/
+.aboutUsPgContainer{
+    background-color: rgba(252, 248, 230, 1);
+}
+
+.aboutUsPgFirstCol{
+    padding-top: 65px;
+}
+.aboutUsPgFirstCol span{
+    font-family: 'Avenir', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(79, 121, 66, 1);
+}
+.aboutUsPgFirstCol h5{
+    font-family: 'Gotham',sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+    padding-right: 80px;
+}
+.aboutUsPgFirstCol div h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+}
+.aboutUsPgFirstCol p{
+    font-family: 'Avenir',sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 0;
+    color: rgba(80, 80, 80, 1);
+}
+.aboutPgSecondContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutPgSecondContainer-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Empowering entrepreneurs section */
+.AboutPgEmpoweringCont{
+    background-color: rgba(252, 248, 230, 1);
+    padding-top: 100px;
+}
+.aboutPgSecondCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aboutUsPgFirstCol-2{
+    padding-top: 100px;
+}
+.aboutUsPgFirstCol-2 span{
+    font-family: 'Gotham',sans-serif;
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(79, 121, 66, 1);
+}
+.aboutUsPgFirstCol-2 h5{
+    font-family: 'Gotham',sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+    padding-right: 50px;
+}
+.aboutUsPgFirstCol-2 p{
+    font-family: 'Avenir',sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-right: 0px;
+}
+.aboutUsPgFirstCol-2 a{
+    border-bottom: 1px solid rgba(6, 118, 60, 1);
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(80, 80, 80, 1);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+/************ about us page css ************/
+    .aboutUsPgContainer{
+        padding-top: 0px;
+    }
+    .aboutUsPgFirstCol{
+        padding-top: 30px;
+    }
+    .aboutUsPgFirstCol span{
+        font-size: 16px;
+        line-height: 30px;
+        text-align: left;
+    }
+    .aboutUsPgFirstCol h5{
+        font-size: 25px;
+        line-height: 30px;
+        padding-right: 0px;
+    }
+    .aboutUsPgFirstCol div h3{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+    }
+    .aboutUsPgFirstCol img{
+        height: 40px;
+        width: 40px;
+    }
+    .aboutUsPgFirstCol p{
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 0px;
+    }
+    .aboutPgSecondContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutPgSecondContainer-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Empowering entrepreneurs section */
+    .AboutPgEmpoweringCont{
+        padding-top: 0px;
+    }
+    .aboutPgSecondCont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutUsPgFirstCol-2{
+        padding-top: 70px;
+    }
+    .aboutUsPgFirstCol-2 span{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .aboutUsPgFirstCol-2 h5{
+        font-size: 24px;
+        line-height: 30px;
+        padding-right: 0px;
+    }
+    .aboutUsPgFirstCol-2 p{
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 0px;
+    }
+    .aboutUsPgFirstCol-2 a{
+        font-size: 16px;
+        line-height: 30px;
+        text-decoration: none;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+/************ about us page css ************/
+    .aboutUsPgContainer{
+        padding-top: 0px;
+    }
+    .aboutUsPgFirstCol{
+        padding-top: 35px;
+    }
+    .aboutUsPgFirstCol span{
+        font-size: 16px;
+        line-height: 30px;
+        text-align: left;
+    }
+    .aboutUsPgFirstCol h5{
+        font-size: 25px;
+        line-height: 30px;
+        padding-right: 0px;
+    }
+    .aboutUsPgFirstCol div h3{
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+    }
+    .aboutUsPgFirstCol img{
+        height: 40px;
+        width: 40px;
+    }
+    .aboutUsPgFirstCol p{
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 0px;
+    }
+    .aboutPgSecondContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutPgSecondContainer-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Empowering entrepreneurs section */
+    .AboutPgEmpoweringCont{
+        padding-top: 0px;
+    }
+    .aboutPgSecondCont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutUsPgFirstCol-2{
+        padding-top: 70px;
+    }
+    .aboutUsPgFirstCol-2 span{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .aboutUsPgFirstCol-2 h5{
+        font-size: 24px;
+        line-height: 30px;
+        padding-right: 0px;
+    }
+    .aboutUsPgFirstCol-2 p{
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 0px;
+    }
+    .aboutUsPgFirstCol-2 a{
+        font-size: 16px;
+        line-height: 30px;
+        text-decoration: none;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/************ about us page css ************/
+    .aboutUsPgContainer{
+        padding-top: 0px;
+    }
+    .aboutUsPgFirstCol{
+        padding-top: 35px;
+    }
+    .aboutUsPgFirstCol span{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: left;
+    }
+    .aboutUsPgFirstCol h5{
+        font-size: 30px;
+        line-height: 30px;
+        padding-right: 0px;
+    }
+    .aboutUsPgFirstCol div h3{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: left;
+    }
+    .aboutUsPgFirstCol img{
+        height: 40px;
+        width: 40px;
+    }
+    .aboutUsPgFirstCol p{
+        font-size: 18px;
+        line-height: 24px;
+        padding-left: 0px;
+    }
+    .aboutPgSecondContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutPgSecondContainer-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Empowering entrepreneurs section */
+    .AboutPgEmpoweringCont{
+        padding-top: 0px;
+    }
+    .aboutPgSecondCont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutUsPgFirstCol-2{
+        padding-top: 70px;
+    }
+    .aboutUsPgFirstCol-2 span{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .aboutUsPgFirstCol-2 h5{
+        font-size: 24px;
+        line-height: 30px;
+        padding-right: 0px;
+    }
+    .aboutUsPgFirstCol-2 p{
+        font-size: 17px;
+        line-height: 24px;
+        padding-right: 0px;
+    }
+    .aboutUsPgFirstCol-2 a{
+        font-size: 16px;
+        line-height: 30px;
+        text-decoration: none;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+/************ about us page css ************/
+    .aboutUsPgContainer{
+        padding-top: 0px;
+    }
+    .aboutUsPgFirstCol{
+        padding-top: 40px;
+    }
+    .aboutUsPgFirstCol span{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: left;
+    }
+    .aboutUsPgFirstCol h5{
+        font-size: 35px;
+        line-height: 35px;
+        padding-right: 0px;
+    }
+    .aboutUsPgFirstCol div h3{
+        font-size: 20px;
+        line-height: 25px;
+        text-align: left;
+    }
+    .aboutUsPgFirstCol img{
+        height: 40px;
+        width: 40px;
+    }
+    .aboutUsPgFirstCol p{
+        font-size: 18px;
+        line-height: 24px;
+        padding-left: 50px;
+    }
+    .aboutPgSecondContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutPgSecondContainer-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Empowering entrepreneurs section */
+    .AboutPgEmpoweringCont{
+        padding-top: 70px;
+    }
+    .aboutPgSecondCont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutUsPgFirstCol-2{
+        padding-top: 70px;
+    }
+    .aboutUsPgFirstCol-2 span{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .aboutUsPgFirstCol-2 h5{
+        font-size: 25px;
+        line-height: 30px;
+        padding-right: 0px;
+    }
+    .aboutUsPgFirstCol-2 p{
+        font-size: 18px;
+        line-height: 24px;
+        padding-right: 0px;
+    }
+    .aboutUsPgFirstCol-2 a{
+        font-size: 18px;
+        line-height: 30px;
+        text-decoration: none;
+    }
+}
+
+
+/************** categories page css ***************/
+.CategoriesPgCont{
+    padding-top: 70px;
+    background-color: rgba(252, 248, 230, 1);
+}
+.CategoriesPgHeading h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+    margin-bottom: 0;
+}
+.CategoriesPgHeading p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(80, 80, 80, 1);
+    margin: 15px 0 50px 0;
+    padding:0 24% 0 24%;
+}
+.CategoriesPgCont .categoriesPgRow .item div{
+    background-image: url("/images/HomePage/image\ 12\ 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CategoriesPgCont .categoriesPgRow .item img{
+    width: 89.99px;
+    height: 85.06px;
+    cursor: pointer;
+}
+.CategoriesPgCont .categoriesPgRow .item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.CategoriesPgCont .categoriesPgRow .item p{
+    font-family: 'Gotham', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(6, 118, 60, 1);
+    margin-top: 15px;
+}
+
+
+/* categories our products css */
+.CatPgProductsCont{
+    background-color:rgba(252, 248, 230, 1);
+    padding-top: 100px;
+}
+
+.CatPgProductsHeading h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(6, 118, 60, 1);
+    margin-bottom: 0;
+}
+.CatPgProductsHeading img{
+    margin-left: 11%;
+}
+.CatPgProductsHeading p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(6, 118, 60, 1); 
+    margin: 10px 0 40px 0;  
+    padding: 0 28%; 
+}
+.CatPgProductsCard .outerCard{
+    width: 306px;
+    height: 368px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25);
+    box-shadow: 0px 30px 60px -30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+.CatPgProductsCard .innerCard{
+    width: 274px;
+    height: 332px;
+    border: 1px solid rgba(255, 205, 96, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CatPgProductsCard img{
+    width: 125px;
+    height: 125px;
+    cursor: pointer;
+}
+.CatPgProductsCard h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(6, 118, 60, 1);
+    margin-top: 30px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+}
+.CatPgProductsCard p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(128, 128, 128, 1);
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+}
+.CatPgProductsCont a{
+    width: 95px;
+    height: 38px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 4px;
+    background-color: rgba(6, 118, 60, 1);
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 16px;
+    font-weight: 750;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin: 50px 0 70px 0;
+}
+.CatPgProductsCont a:hover{
+    background-color: rgb(9, 172, 88);
+    color: rgba(255, 255, 255, 1);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+/************** categories page css ***************/
+    .CategoriesPgCont{
+        padding-top: 30px;
+    }
+    .CategoriesPgHeading h3{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .CategoriesPgHeading p{
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin: 15px 0 50px 0;
+        padding:0;
+    }
+    .CategoriesPgCont .categoriesPgRow{
+        display: flex;
+        gap: 30px;
+    }
+    .CategoriesPgCont .categoriesPgRow .item div{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CategoriesPgCont .categoriesPgRow .item img{
+        width: 89.99px;
+        height: 85.06px;
+    }
+
+    .CategoriesPgCont .categoriesPgRow .item p{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /* categories our products css */
+    .CatPgProductsCont{
+        padding-top: 100px;
+    }
+    .CatPgProductsHeading h3{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 0px;
+        text-align: center;
+    }
+    .CatPgProductsHeading img{
+        margin-left: 32%;
+    }
+    .CatPgProductsHeading p{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;  
+        padding: 0; 
+    }
+    .CatPgProductsCard{
+        display: flex;
+        justify-content: center;
+    }
+    .CatPgProductsCard .outerCard{
+        width: 306px;
+        height: 368px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 0 10px;
+    }
+    .CatPgProductsCard .innerCard{
+        width: 274px;
+        height: 332px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .CatPgProductsCard img{
+        width: 125px;
+        height: 125px;
+    }
+    .CatPgProductsCard h3{
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .CatPgProductsCard p{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .CatPgProductsCont button{
+        width: 90px;
+        height: 30px;
+        padding: 0;
+        line-height: 22px;
+        text-align: center;
+        font-size: 14px;
+        margin: 50px 0 60px 0;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+    .CategoriesPgCont{
+        padding-top: 30px;
+    }
+    .CategoriesPgHeading h3{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .CategoriesPgHeading p{
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin: 15px 0 50px 0;
+        padding:0;
+    }
+    .CategoriesPgCont .categoriesPgRow{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    .CategoriesPgCont .categoriesPgRow .item div{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CategoriesPgCont .categoriesPgRow .item img{
+        width: 89.99px;
+        height: 85.06px;
+    }
+
+    .CategoriesPgCont .categoriesPgRow .item p{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /* categories our products css */
+    .CatPgProductsCont{
+        padding-top: 100px;
+    }
+    .CatPgProductsHeading h3{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 0px;
+        text-align: center;
+    }
+    .CatPgProductsHeading img{
+        margin-left: 32%;
+    }
+    .CatPgProductsHeading p{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;  
+        padding: 0; 
+    }
+    .CatPgProductsCard{
+        display: flex;
+        justify-content: center;
+    }
+    .CatPgProductsCard .outerCard{
+        width: 306px;
+        height: 368px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 0 10px;
+    }
+    .CatPgProductsCard .innerCard{
+        width: 274px;
+        height: 332px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .CatPgProductsCard img{
+        width: 125px;
+        height: 125px;
+    }
+    .CatPgProductsCard h3{
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .CatPgProductsCard p{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .CatPgProductsCont button{
+        width: 90px;
+        height: 30px;
+        padding: 0;
+        line-height: 22px;
+        text-align: center;
+        font-size: 14px;
+        margin: 50px 0 60px 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .CategoriesPgCont{
+        padding-top: 40px;
+    }
+    .CategoriesPgHeading h3{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .CategoriesPgHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 15px 0 50px 0;
+        padding:0;
+    }
+    .CategoriesPgCont .categoriesPgRow{
+        display: flex;
+        gap: 0px;
+    }
+    .CategoriesPgCont .categoriesPgRow .item div{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CategoriesPgCont .categoriesPgRow .item img{
+        width: 89.99px;
+        height: 85.06px;
+    }
+
+    .CategoriesPgCont .categoriesPgRow .item p{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 45px;
+    }
+
+    /* categories our products css */
+    .CatPgProductsCont{
+        padding-top: 100px;
+    }
+    .CatPgProductsHeading h3{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 0px;
+        text-align: center;
+    }
+    .CatPgProductsHeading img{
+        margin-left: 16%;
+    }
+    .CatPgProductsHeading p{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;  
+        padding: 0 18%; 
+    }
+    .CatPgProductsCard{
+        display: flex;
+        justify-content: center;
+    }
+    .CatPgProductsCard .outerCard{
+        width: 306px;
+        height: 368px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 0 10px;
+    }
+    .CatPgProductsCard .innerCard{
+        width: 274px;
+        height: 332px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .CatPgProductsCard img{
+        width: 125px;
+        height: 125px;
+    }
+    .CatPgProductsCard h3{
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .CatPgProductsCard p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .CatPgProductsCont button{
+        width: 90px;
+        height: 30px;
+        padding: 0;
+        line-height: 22px;
+        text-align: center;
+        font-size: 14px;
+        margin: 50px 0 60px 0;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1439px) {
+    .CategoriesPgCont{
+        padding-top: 40px;
+    }
+    .CategoriesPgHeading h3{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .CategoriesPgHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 15px 0 50px 0;
+        padding: 0 20%; 
+    }
+    .CategoriesPgCont .categoriesPgRow{
+        display: flex;
+        gap: 0px;
+    }
+    .CategoriesPgCont .categoriesPgRow .item div{
+        width: 135px;
+        height: 135px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .CategoriesPgCont .categoriesPgRow .item img{
+        width: 69.99px;
+        height: 65.06px;
+    }
+
+    .CategoriesPgCont .categoriesPgRow .item p{
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+
+    /* categories our products css */
+    .CatPgProductsCont{
+        padding-top: 100px;
+    }
+    .CatPgProductsHeading h3{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 0px;
+        text-align: center;
+    }
+    .CatPgProductsHeading img{
+        margin-left: 10%;
+    }
+    .CatPgProductsHeading p{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+        margin: 10px 0 40px 0;  
+        padding: 0 25%; 
+    }
+    .CatPgProductsCard{
+        display: flex;
+        justify-content: center;
+    }
+    .CatPgProductsCard .outerCard{
+        width: 220px;
+        height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 0 10px;
+    }
+    .CatPgProductsCard .innerCard{
+        width: 220px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .CatPgProductsCard img{
+        width: 105px;
+        height: 105px;
+    }
+    .CatPgProductsCard h3{
+        font-size: 18px;
+        line-height: 34px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .CatPgProductsCard p{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .CatPgProductsCont button{
+        width: 90px;
+        height: 30px;
+        padding: 0;
+        line-height: 22px;
+        text-align: center;
+        font-size: 14px;
+        margin: 50px 0 60px 0;
+    }
+}
+
+
+/******** store locator page css *********/
+.StoreLocatorCont{
+    background-color:rgba(252, 248, 230, 1);
+    padding-top: 50px;
+}
+
+.StoreLocatorHeading h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(6, 118, 60, 1);   
+}
+
+.StoreLocatorHeading p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(80, 80, 80, 1);
+    padding: 0 30%;
+}
+.StoreLocatorSelect{
+    margin: 30px 0 90px 0 !important;
+}
+.StoreLocatorSelect div h5{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+}
+
+.StoreLocatorSelect select{
+    width: 100% !important;
+    height: 55px !important;
+    border-radius: 4px !important;
+    border: 1.5px solid rgba(204, 204, 204, 1) !important;
+    box-shadow: none !important;
+}
+
+.StoreLocatorSelect option{
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(128, 128, 128, 1) !important;
+}
+
+.StoreLocatorSelect .form-select {
+    --bs-form-select-bg-img: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwYAAACWklEQVR4nO2YS2sUQRCAa6OiB3+Ep5z0lEz1gMIcPEzVBi9qV42gxgdE3cQXCEYlLIg3CQERBBERBBGvIv4ob17UaDbSi5uNZnd2etzHLPQHdeymv6mq6QdAIBAIBAKBQMBhUj1iSBoRZ/NQIWK2x5Cz5Yh1tvAgQ/YEkn41rNuGZMuQ3oAKgKk9h6w/3bqQ5Zth5YGDYpbjOzLdaCHJHaiIjOkE6Y+Y5JSvzO4JHsEEQNKr7UrpvabeUq5ncmW6E6yOVSaVa65C8tbkym9+QY7+LUTSGCjTjbWxyLCuDJLpWz3ub9Y3rb2+CsnjkcpQdrewDOt2RHrSr1Z7hjwdjYze86iW/N5Gslc8M7UOALVhyRjS+z4yyPqwwBfykzKkL4YhNRKZDoblsl+m9CU0mzNQEteTfjLyoNxmRvrLo6delZFClieePbMKZTEk2Z4dOj/eJUmyv+D0NcO64TF3y7DeLi1TVgpJ3heQqiHrMy+ZNLv13zI7UqzqmakPc3NLB/rJGJLnE5PpENeteEmRfCSig7CbZnMGSV/7yMQkN2FU+Eoh66ckWTzkxlpr9xnWNz4yyLoCowZJrWdPfU4SexhZ3/rJZMswLrx7iuSLV8+QLsG4QcrOGpZNj4UWlJEGTArDcmaIUq1KXPdNqqeHINWK2F6HqoBptoCs30vJuDNjqpegamAZKZKtiOwiVBVDUi8q5Q6+lZbp4N7L/ryb5cogy0WYFkyOVFumrhdg2ojrGf0r1b5fkT0P04pp91RHSjbdVQSmnYh11p3L9jwGBgKBQCAQCASgJL8B7nnqcez3tKwAAAAASUVORK5CYII=");
+}
+
+.pagination .page-item{
+    width: 35px !important;
+    height: 35px !important;
+    padding: 0px !important;
+    border-radius: 4px !important;
+    background: linear-gradient(0deg, #FCF8E6, #FCF8E6) !important;
+    border: 1.5px solid rgba(6, 118, 60, 1) !important;
+}
+.pagination .page-item a{
+   background-color: transparent;
+   color:rgba(6, 118, 60, 1);
+   line-height: 0px;
+   font-family: 'SF Pro' sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px !important;
+    margin: 0 !important;
+    border: 0;
+}
+.pagination span img{
+    height: 15px;
+}
+.pagination .activePage{
+    background-color: rgba(6, 118, 60, 1) !important;
+    color: rgba(255, 205, 96, 1) !important;
+    border-radius: 4px !important;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+/******** store locator page css *********/
+    .StoreLocatorCont{
+        padding-top: 20px;
+    }
+    .StoreLocatorHeading h3{
+        font-size: 20px;
+        line-height: 0px;
+    }
+    .StoreLocatorHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0;
+    }
+    .StoreLocatorSelect{
+        margin: 20px 0 60px 0 !important;
+    }
+    .StoreLocatorSelect div h5{
+        font-size: 16px;
+        line-height: 28px;
+        text-align: left;
+    }
+    .StoreLocatorSelect select{
+        width: 100% !important;
+        height: 42px !important;
+    }
+    .StoreLocatorSelect option{
+        font-size: 15px !important;
+        line-height: 0px;
+        text-align: left;
+    }
+    .pagination .page-item{
+        width: 25px !important;
+        height: 25px !important;
+        padding: 0px !important;
+    }
+    .pagination .page-item a{
+        font-size: 12px;
+    }
+    .pagination span img{
+        height: 12px;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+/******** store locator page css *********/
+    .StoreLocatorCont{
+        padding-top: 20px;
+    }
+    .StoreLocatorHeading h3{
+        font-size: 20px;
+        line-height: 0px;
+    }
+    .StoreLocatorHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0;
+    }
+    .StoreLocatorSelect{
+        margin: 20px 0 60px 0 !important;
+    }
+    .StoreLocatorSelect div h5{
+        font-size: 16px;
+        line-height: 28px;
+        text-align: left;
+    }
+    .StoreLocatorSelect select{
+        width: 100% !important;
+        height: 45px !important;
+    }
+    .StoreLocatorSelect option{
+        font-size: 15px !important;
+        line-height: 0px;
+        text-align: left;
+    }
+    .pagination .page-item{
+        width: 25px !important;
+        height: 25px !important;
+        padding: 0px !important;
+    }
+    .pagination .page-item a{
+        font-size: 12px;
+    }
+    .pagination span img{
+        height: 12px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/******** store locator page css *********/
+    .StoreLocatorCont{
+        padding-top: 40px;
+    }
+    .StoreLocatorHeading h3{
+        font-size: 20px;
+        line-height: 0px;
+    }
+    .StoreLocatorHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0 12%;
+    }
+    .StoreLocatorSelect{
+        margin: 20px 0 60px 0 !important;
+    }
+    .StoreLocatorSelect div h5{
+        width: 10% !important;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .StoreLocatorSelect div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center !important;
+    }
+    .StoreLocatorSelect select{
+        width: 50% !important;
+        height: 40px !important;
+        margin: 10px;
+    }
+    .StoreLocatorSelect option{
+        font-size: 14px !important;
+        line-height: 0px;
+        text-align: left;
+    }
+    .pagination .page-item{
+        width: 30px !important;
+        height: 30px !important;
+        padding: 0px !important;
+    }
+    .pagination .page-item a{
+        font-size: 14px;
+    }
+    .pagination span img{
+        height: 15px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+/******** store locator page css *********/
+    .StoreLocatorCont{
+        padding-top: 50px;
+    }
+    .StoreLocatorHeading h3{
+        font-size: 22px;
+        line-height: 0px;
+    }
+    .StoreLocatorHeading p{
+        font-size: 17px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0 25%;
+    }
+    .StoreLocatorSelect{
+        margin: 30px 0 60px 0 !important;
+    }
+    .StoreLocatorSelect div h5{
+        width: 100% !important;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: left;
+    }
+    .StoreLocatorSelect div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center !important;
+    }
+    .StoreLocatorSelect select{
+        width: 100% !important;
+        height: 50px !important;
+        margin: 0px;
+    }
+    .StoreLocatorSelect option{
+        font-size: 16px !important;
+        line-height: 20px;
+        text-align: left;
+    }
+    .pagination .page-item{
+        width: 35px !important;
+        height: 35px !important;
+        padding: 0px !important;
+    }
+    .pagination .page-item a{
+        font-size: 16px;
+    }
+    .pagination span img{
+        height: 18px;
+    }
+}
+
+
+/******* career page css ********/
+.CareerPgCont{
+    background-color:rgba(252, 248, 230, 1);
+    padding-top: 50px;
+}
+
+.CareerPgHeading h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+}
+.CareerPgHeading p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(80, 80, 80, 1);
+    padding: 0 24%;
+}
+.CareerPgFormCont{
+    width: 80%;
+    border-radius: 8px;
+    border: 2px solid rgba(6, 118, 60, 1);
+    padding: 20px;
+    margin: 30px 0 150px 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.CareerPgFormCont .item{
+    width: 98%;
+   display: flex;
+   gap: 25px;
+   justify-content: center;
+   align-items: center;
+}
+
+.CareerPgFormCont .item div{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+}
+
+.CareerPgFormCont .item label{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+}
+
+.CareerPgFormCont .item input{
+    width:98%;
+    height:40px;
+    padding: 8px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 1);
+    box-shadow: none;
+}
+
+.CareerPgFormCont .item input::placeholder{
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(128, 128, 128, 1);
+}
+
+.Messageitem label{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+}
+.Messageitem input{
+    width:100%;
+    height:40px;
+    padding: 8px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 1);
+    box-shadow: none !important;
+}
+.Messageitem input::placeholder{
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(128, 128, 128, 1);
+}
+.UploadFileItem label{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+    margin-top: 10px;
+}
+.UploadFileItem .docFile{
+    padding: 20px;
+    border: 2px dashed rgba(128, 128, 128, 1)
+}
+.careerPgBtn button{
+    width: 102px;
+    height: 42px;
+    border-radius: 4px;
+    background-color: rgba(6, 118, 60, 1);
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 16px;
+    font-weight: 750;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.careerPgBtn button:hover{
+    background-color: rgb(2, 150, 74);
+    color: rgba(255, 255, 255, 1);
+}
+.docFile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.docFile p{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(128, 128, 128, 1);
+}
+.docFile img{
+    width: 40px;
+    height: 40px;
+    color: rgba(128, 128, 128, 1) !important;
+}
+
+.file-input-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.file-input-container label {
+    display: block;
+    padding:8px 16px 8px 16px;
+    background-color:rgba(128, 128, 128, 1);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.file-input-container input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 100px; 
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-input-container::before {
+    content: ''; 
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: rgb(201, 15, 15);
+}
+
+.file-input-container input:valid + label::before {
+    content: attr(data-filename);
+    color: rgba(128, 128, 128, 1);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+/******* career page css ********/
+    .CareerPgCont{
+        padding-top: 25px;
+    }
+    .CareerPgHeading h3{
+        font-size: 20px;
+    }
+    .CareerPgHeading p{
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0;
+    }
+    .CareerPgFormCont{
+        width: 98%;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 30px 0 80px 0 !important;
+  
+        gap: 20px;
+    }
+    .CareerPgFormCont .item{
+        width: 98%;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .CareerPgFormCont .item div{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .CareerPgFormCont .item label{
+        font-size: 17px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .CareerPgFormCont .item input{
+        width:98%;
+        height:30px;
+        padding: 8px;
+    }
+
+    .CareerPgFormCont .item input::placeholder{
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .Messageitem label{
+        font-size: 17px;
+    }
+    .Messageitem input{
+        width:100%;
+        height:30px;
+        padding: 8px;
+        border-bottom: 1px solid rgba(128, 128, 128, 1);
+    }
+    .Messageitem input::placeholder{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .UploadFileItem label{
+        font-size: 17px;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .UploadFileItem .docFile{
+        padding: 20px;
+        border: 2px dashed rgba(128, 128, 128, 1);
+    }
+    .careerPgBtn button{
+        width: 92px;
+        height: 32px;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .docFile p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .docFile img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .file-input-container {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .file-input-container label {
+        display: block;
+        padding:5px 10px;
+        margin-bottom: 10px;
+        height: 35px;
+    }
+
+    .file-input-container input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 100px; 
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .file-input-container::before {
+        content: ''; 
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+/******* career page css ********/
+    .CareerPgCont{
+        padding-top: 25px;
+    }
+    .CareerPgHeading h3{
+        font-size: 20px;
+    }
+    .CareerPgHeading p{
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0;
+    }
+    .CareerPgFormCont{
+        width: 98%;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 30px 0 80px 0 !important;
+
+        gap: 20px;
+    }
+    .CareerPgFormCont .item{
+        width: 98%;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .CareerPgFormCont .item div{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .CareerPgFormCont .item label{
+        font-size: 17px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .CareerPgFormCont .item input{
+        width:98%;
+        height:30px;
+        padding: 8px;
+    }
+
+    .CareerPgFormCont .item input::placeholder{
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .Messageitem label{
+        font-size: 17px;
+    }
+    .Messageitem input{
+        width:100%;
+        height:30px;
+        padding: 8px;
+        border-bottom: 1px solid rgba(128, 128, 128, 1);
+    }
+    .Messageitem input::placeholder{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .UploadFileItem label{
+        font-size: 17px;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .UploadFileItem .docFile{
+        padding: 20px;
+        border: 2px dashed rgba(128, 128, 128, 1);
+    }
+    .careerPgBtn button{
+        width: 92px;
+        height: 32px;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .docFile p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .docFile img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .file-input-container {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .file-input-container label {
+        display: block;
+        padding:5px 10px;
+        margin-bottom: 10px;
+        height: 35px;
+    }
+
+    .file-input-container input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 100px; 
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .file-input-container::before {
+        content: ''; 
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/******* career page css ********/
+    .CareerPgCont{
+        padding-top: 30px;
+    }
+    .CareerPgHeading h3{
+        font-size: 22px;
+    }
+    .CareerPgHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0 5%;
+    }
+    .CareerPgFormCont{
+        width: 95%;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 30px 0 100px 0 !important;
+        gap: 20px;
+    }
+    .CareerPgFormCont .item{
+        width: 98%;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .CareerPgFormCont .item div{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .CareerPgFormCont .item label{
+        font-size: 18px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .CareerPgFormCont .item input{
+        width:98%;
+        height:30px;
+        padding: 8px;
+    }
+
+    .CareerPgFormCont .item input::placeholder{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .Messageitem label{
+        font-size: 18px;
+    }
+    .Messageitem input{
+        width:100%;
+        height:30px;
+        padding: 8px;
+        border-bottom: 1px solid rgba(128, 128, 128, 1);
+    }
+    .Messageitem input::placeholder{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .UploadFileItem label{
+        font-size: 18px;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .UploadFileItem .docFile{
+        padding: 20px;
+        border: 2px dashed rgba(128, 128, 128, 1);
+    }
+    .careerPgBtn button{
+        width: 102px;
+        height: 35px;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .docFile p{
+        font-size: 17px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .docFile img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .file-input-container {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .file-input-container label {
+        display: block;
+        padding:8px 15px;
+        margin-bottom: 10px;
+        height: 40px;
+    }
+
+    .file-input-container input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 100px; 
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .file-input-container::before {
+        content: ''; 
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+/******* career page css ********/
+    .CareerPgCont{
+        padding-top: 40px;
+    }
+    .CareerPgHeading h3{
+        font-size: 24px;
+    }
+    .CareerPgHeading p{
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0 15%;
+    }
+    .CareerPgFormCont{
+        width: 80%;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 30px 0 100px 0 !important;
+        gap: 20px;
+    }
+    .CareerPgFormCont .item{
+        width: 98%;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .CareerPgFormCont .item div{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .CareerPgFormCont .item label{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .CareerPgFormCont .item input{
+        width:98%;
+        height:40px;
+        padding: 8px;
+    }
+
+    .CareerPgFormCont .item input::placeholder{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .Messageitem label{
+        font-size: 20px;
+    }
+    .Messageitem input{
+        width:100%;
+        height:40px;
+        padding: 8px;
+        border-bottom: 1px solid rgba(128, 128, 128, 1);
+    }
+    .Messageitem input::placeholder{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .UploadFileItem label{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .UploadFileItem .docFile{
+        padding: 20px;
+        border: 2px dashed rgba(128, 128, 128, 1);
+    }
+    .careerPgBtn button{
+        width: 112px;
+        height: 40px;
+        border-radius: 4px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .docFile p{
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .docFile img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .file-input-container {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .file-input-container label {
+        display: block;
+        padding:8px 15px;
+        margin-bottom: 10px;
+        height: 40px;
+    }
+
+    .file-input-container input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 100px; 
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .file-input-container::before {
+        content: ''; 
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+}
+
+
+
+/********** Partner With us page css ************/
+.PartnerPgCont{
+    background-color:rgba(252, 248, 230, 1);
+    padding-top: 50px;
+}
+.PartnerPgFormCont .item select{
+    border-bottom: 1px solid rgba(80, 80, 80, 1)!important;
+    border-radius: 0 ;
+}
+.PartnerPgFormCont .form-select option{
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px !important;
+    font-weight: 350 !important;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(80, 80, 80, 1) !important;    
+}
+.PartnerPgHeading h4{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(80, 80, 80, 1);
+}
+
+.PartnerPgHeading h5{
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(80, 80, 80, 1);
+}
+.PartnerPgHeading h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);    
+}
+.PartnerPgHeading p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(80, 80, 80, 1);
+    padding: 0 17%;
+    margin-bottom: 70px;
+}
+
+.PartnerPgFormCont{
+    width: 80%;
+    border-radius: 8px;
+    border: 2px solid rgba(6, 118, 60, 1);
+    padding: 20px;
+    margin: 30px 0 150px 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.PartnerPgFormCont .item{
+    width: 98%;
+   display: flex;
+   gap: 25px;
+   justify-content: center;
+   align-items: center;
+}
+
+.PartnerPgFormCont .item div{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+}
+
+.PartnerPgFormCont .item label{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+}
+
+.PartnerPgFormCont .item input{
+    width:98%;
+    height:40px;
+    padding: 8px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 1);
+    box-shadow: none;
+}
+
+.PartnerPgFormCont .item input::placeholder{
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(128, 128, 128, 1);
+}
+
+.PartnerPgFormCont .Messageitem label{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 3500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+}
+.PartnerPgFormCont .Messageitem input{
+    width:100%;
+    height:40px;
+    padding: 8px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 1);
+    box-shadow: none !important;
+}
+.PartnerPgFormCont .Messageitem input::placeholder{
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(128, 128, 128, 1);
+}
+.PartnerPgFormCont .UploadFileItem label{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+    margin-top: 10px;
+}
+
+.PartnerPgFormCont .careerPgBtn button{
+    width: 102px;
+    height: 42px;
+    border-radius: 4px;
+    background-color: rgba(6, 118, 60, 1);
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 16px;
+    font-weight: 750;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.PartnerPgFormCont .careerPgBtn button:hover{
+    background-color: rgb(2, 150, 74);
+    color: rgba(255, 255, 255, 1);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+/******* career page css ********/
+    .PartnerPgCont{
+        padding-top: 25px;
+    }
+    .PartnerPgHeading h3{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .PartnerPgHeading p{
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .PartnerPgHeading h4{
+        font-size: 18px;
+        line-height: 34px;
+        text-align: left;
+    }
+    .PartnerPgHeading h5{
+        font-size: 18px;
+        line-height: 0px;
+        text-align: left;
+    }
+    .PartnerPgFormCont{
+        width: 98%;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 30px 0 80px 0 !important;
+        gap: 20px;
+    }
+    .PartnerPgFormCont .item{
+        width: 98%;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .PartnerPgFormCont .item div{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .PartnerPgFormCont .item label{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .PartnerPgFormCont .item input{
+        width:98%;
+        height:30px;
+        padding: 8px;
+    }
+
+    .PartnerPgFormCont .item input::placeholder{
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .PartnerPgFormCont .Messageitem label{
+        font-size: 16px;
+    }
+    .PartnerPgFormCont .Messageitem input{
+        width:100%;
+        height:30px;
+        padding: 8px;
+        border-bottom: 1px solid rgba(128, 128, 128, 1);
+    }
+    .PartnerPgFormCont .Messageitem input::placeholder{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .PartnerPgFormCont .UploadFileItem label{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .PartnerPgFormCont .careerPgBtn button{
+        width: 92px;
+        height: 32px;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+/******* career page css ********/
+    .PartnerPgCont{
+        padding-top: 25px;
+    }
+    .PartnerPgHeading h3{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .PartnerPgHeading p{
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .PartnerPgHeading h4{
+        font-size: 18px;
+        line-height: 34px;
+        text-align: left;
+    }
+    .PartnerPgHeading h5{
+        font-size: 18px;
+        line-height: 0px;
+        text-align: left;
+    }
+    .PartnerPgFormCont{
+        width: 98%;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 30px 0 80px 0 !important;
+        gap: 20px;
+    }
+    .PartnerPgFormCont .item{
+        width: 98%;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .PartnerPgFormCont .item div{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .PartnerPgFormCont .item label{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .PartnerPgFormCont .item input{
+        width:98%;
+        height:30px;
+        padding: 8px;
+    }
+
+    .PartnerPgFormCont .item input::placeholder{
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .PartnerPgFormCont .Messageitem label{
+        font-size: 16px;
+    }
+    .PartnerPgFormCont .Messageitem input{
+        width:100%;
+        height:30px;
+        padding: 8px;
+        border-bottom: 1px solid rgba(128, 128, 128, 1);
+    }
+    .PartnerPgFormCont .Messageitem input::placeholder{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .PartnerPgFormCont .UploadFileItem label{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .PartnerPgFormCont .careerPgBtn button{
+        width: 92px;
+        height: 32px;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/******* career page css ********/
+    .PartnerPgCont{
+        padding-top: 30px;
+    }
+    .PartnerPgHeading h3{
+        font-size: 22px;
+    }
+    .PartnerPgHeading p{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0 5%;
+    }
+    .PartnerPgHeading h4{
+        font-size: 19px;
+        line-height: 34px;
+        text-align: left;
+    }
+    .PartnerPgHeading h5{
+        font-size: 19px;
+        line-height: 0px;
+        text-align: left;
+    }
+    .PartnerPgFormCont{
+        width: 95%;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 30px 0 100px 0 !important;
+        gap: 20px;
+    }
+    .PartnerPgFormCont .item{
+        width: 98%;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .PartnerPgFormCont .item div{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .PartnerPgFormCont .item label{
+        font-size: 18px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .PartnerPgFormCont .item input{
+        width:98%;
+        height:30px;
+        padding: 8px;
+    }
+
+    .PartnerPgFormCont .item input::placeholder{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .PartnerPgFormCont .Messageitem label{
+        font-size: 18px;
+    }
+    .PartnerPgFormCont .Messageitem input{
+        width:100%;
+        height:30px;
+        padding: 8px;
+        border-bottom: 1px solid rgba(128, 128, 128, 1);
+    }
+    .PartnerPgFormCont .Messageitem input::placeholder{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .PartnerPgFormCont .UploadFileItem label{
+        font-size: 18px;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 10px;
+    }
+   
+    .PartnerPgFormCont .careerPgBtn button{
+        width: 102px;
+        height: 35px;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+/******* career page css ********/
+    .PartnerPgCont{
+        padding-top: 50px;
+    }
+    .PartnerPgHeading h3{
+        font-size: 24px;
+    }
+    .PartnerPgHeading p{
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0 15%;
+    }
+    .PartnerPgHeading h4{
+        font-size: 20px;
+        line-height: 34px;
+        text-align: left;
+    }
+    .PartnerPgHeading h5{
+        font-size: 20px;
+        line-height: 0px;
+        text-align: left;
+    }
+    .PartnerPgFormCont{
+        width: 80%;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 30px 0 100px 0 !important;
+        gap: 20px;
+    }
+    .PartnerPgFormCont .item{
+        width: 98%;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .PartnerPgFormCont .item div{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .PartnerPgFormCont .item label{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .PartnerPgFormCont .item input{
+        width:98%;
+        height:40px;
+        padding: 8px;
+    }
+
+    .PartnerPgFormCont .item input::placeholder{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .PartnerPgFormCont .Messageitem label{
+        font-size: 20px;
+    }
+    .PartnerPgFormCont .Messageitem input{
+        width:100%;
+        height:40px;
+        padding: 8px;
+        border-bottom: 1px solid rgba(128, 128, 128, 1);
+    }
+    .PartnerPgFormCont .Messageitem input::placeholder{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .PartnerPgFormCont .UploadFileItem label{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .PartnerPgFormCont .careerPgBtn button{
+        width: 112px;
+        height: 40px;
+        border-radius: 4px;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+}
+
+/********* contact us page css ************/
+.contactUsPgCont{
+    background-color:rgba(252, 248, 230, 1);
+    padding-top: 50px;
+}
+.contactUsPgHeading h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+   color: rgba(6, 118, 60, 1);    
+}
+.contactUsPgHeading p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(80, 80, 80, 1);
+    padding: 0 32%;
+    margin-bottom: 50px;
+}
+
+.contactPgCardRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactPgCardRow .contactPgCard {
+    height: 283px;
+    background-color: rgba(6, 118, 60, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+.contactPgCardRow .contactPgCard img{
+    width: 39.99px !important;
+    height: 39.54px !important;
+}
+.contactPgCard div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactPgCard p{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 205, 96, 1);
+}
+.contactPgCard span{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+.ContactUsMapCont{
+    background-color:rgba(252, 248, 230, 1);
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+/********* contact us page css ************/
+    .contactUsPgCont{
+        padding-top: 30px;
+    }
+    .contactUsPgHeading h3{
+        font-size: 20px;
+    }
+    .contactUsPgHeading p{
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 35px;
+    }
+    .contactPgCardRow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contactPgCardRow .contactPgCard {
+        height: 263px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    .contactPgCardRow .contactPgCard img{
+        width: 39.99px !important;
+        height: 39.54px !important;
+    }
+
+    .contactPgCard p{
+        font-size: 22px;
+        line-height: 49px;
+        text-align: center;
+    }
+    .contactPgCard span{
+        font-size: 17px;
+        line-height: 26px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .ContactUsMapCont{
+        padding-bottom: 30px;
+    }
+
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+/********* contact us page css ************/
+    .contactUsPgCont{
+        padding-top: 30px;
+    }
+    .contactUsPgHeading h3{
+        font-size: 20px;
+    }
+    .contactUsPgHeading p{
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 35px;
+    }
+    .contactPgCardRow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contactPgCardRow .contactPgCard {
+        height: 263px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    .contactPgCardRow .contactPgCard img{
+        width: 39.99px !important;
+        height: 39.54px !important;
+    }
+
+    .contactPgCard p{
+        font-size: 22px;
+        line-height: 49px;
+        text-align: center;
+    }
+    .contactPgCard span{
+        font-size: 17px;
+        line-height: 26px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .ContactUsMapCont{
+        padding-bottom: 30px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/********* contact us page css ************/
+    .contactUsPgCont{
+        padding-top: 30px;
+    }
+    .contactUsPgHeading h3{
+        font-size: 22px;
+    }
+    .contactUsPgHeading p{
+        font-size: 17px;
+        text-align: center;
+        padding: 0 15%;
+        margin-bottom: 50px;
+    }
+    .contactPgCardRow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contactPgCardRow .contactPgCard {
+        height: 273px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        border-radius: 5px;
+    }
+
+    .contactPgCardRow .contactPgCard img{
+        width: 39.99px !important;
+        height: 39.54px !important;
+    }
+
+    .contactPgCard p{
+        font-size: 22px;
+        line-height: 49px;
+        text-align: center;
+    }
+    .contactPgCard span{
+        font-size: 17px;
+        line-height: 26px;
+        text-align: center;
+        padding: 0 40px;
+    }
+    .ContactUsMapCont{
+        padding-bottom: 100px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+/********* contact us page css ************/
+    .contactUsPgCont{
+        padding-top: 40px;
+    }
+    .contactUsPgHeading h3{
+        font-size: 24px;
+    }
+    .contactUsPgHeading p{
+        font-size: 18px;
+        text-align: center;
+        padding: 0 28%;
+        margin-bottom: 60px;
+    }
+    .contactPgCardRow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contactPgCardRow .contactPgCard {
+        height: 273px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+        border-radius: 5px;
+    }
+
+    .contactPgCardRow .contactPgCard img{
+        width: 39.99px !important;
+        height: 39.54px !important;
+    }
+
+    .contactPgCard p{
+        font-size: 24px;
+        line-height: 49px;
+        text-align: center;
+    }
+    .contactPgCard span{
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        padding: 0 40px;
+    }
+    .ContactUsMapCont{
+        padding-bottom: 100px;
+    }
+}
+
+/********* our brands page css **********/
+.ourBrandsPgCont{
+    background-color:rgba(252, 248, 230, 1);
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.ourBrandsPgHeading h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(6, 118, 60, 1);    
+}
+.ourBrandsPgHeading p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(80, 80, 80, 1);
+    padding: 0 28%;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+/********* our brands page css **********/
+    .ourBrandsPgCont{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+    .ourBrandsPgHeading h3{
+        font-size: 22px; 
+    }
+    .ourBrandsPgHeading p{
+        font-size: 16px;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+/********* our brands page css **********/
+    .ourBrandsPgCont{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+    .ourBrandsPgHeading h3{
+        font-size: 22px; 
+    }
+    .ourBrandsPgHeading p{
+        font-size: 16px;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/********* our brands page css **********/
+    .ourBrandsPgCont{
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .ourBrandsPgHeading h3{
+        font-size: 24px; 
+    }
+    .ourBrandsPgHeading p{
+        font-size: 17px;
+        padding: 0 10%;
+        margin-bottom: 60px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+/********* our brands page css **********/
+    .ourBrandsPgCont{
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+    .ourBrandsPgHeading h3{
+        font-size: 24px; 
+    }
+    .ourBrandsPgHeading p{
+        font-size: 17px;
+        padding: 0 23%;
+        margin-bottom: 60px;
+    }
+}
+
+/******** our products page *********/
+.productPgSearchBox {
+    display: flex;
+}
+.productPgSearchBox input{
+    width: 100% !important;
+    height: 55px !important;
+    border-radius: 4px !important;
+    border: 1.5px solid rgba(204, 204, 204, 1) !important;
+    box-shadow: none !important;
+    color: rgba(128, 128, 128, 1) !important;
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0 10px;
+    box-shadow: none;
+}
+.productPgSearchBox img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 390px;
+    margin: 15px 0 0 0;
+}
+.productPgSelect{
+    margin: 30px 0 90px 0 !important;
+}
+.productPgSelect div h5{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+}
+
+.productPgSelect select{
+    width: 100% !important;
+    height: 55px !important;
+    border-radius: 4px !important;
+    border: 1.5px solid rgba(204, 204, 204, 1) !important;
+    box-shadow: none !important;
+}
+
+.productPgSelect option{
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(128, 128, 128, 1) !important;
+}
+
+.productPgSelect .form-select {
+    --bs-form-select-bg-img: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwYAAACWklEQVR4nO2YS2sUQRCAa6OiB3+Ep5z0lEz1gMIcPEzVBi9qV42gxgdE3cQXCEYlLIg3CQERBBERBBGvIv4ob17UaDbSi5uNZnd2etzHLPQHdeymv6mq6QdAIBAIBAKBQMBhUj1iSBoRZ/NQIWK2x5Cz5Yh1tvAgQ/YEkn41rNuGZMuQ3oAKgKk9h6w/3bqQ5Zth5YGDYpbjOzLdaCHJHaiIjOkE6Y+Y5JSvzO4JHsEEQNKr7UrpvabeUq5ncmW6E6yOVSaVa65C8tbkym9+QY7+LUTSGCjTjbWxyLCuDJLpWz3ub9Y3rb2+CsnjkcpQdrewDOt2RHrSr1Z7hjwdjYze86iW/N5Gslc8M7UOALVhyRjS+z4yyPqwwBfykzKkL4YhNRKZDoblsl+m9CU0mzNQEteTfjLyoNxmRvrLo6delZFClieePbMKZTEk2Z4dOj/eJUmyv+D0NcO64TF3y7DeLi1TVgpJ3heQqiHrMy+ZNLv13zI7UqzqmakPc3NLB/rJGJLnE5PpENeteEmRfCSig7CbZnMGSV/7yMQkN2FU+Eoh66ckWTzkxlpr9xnWNz4yyLoCowZJrWdPfU4SexhZ3/rJZMswLrx7iuSLV8+QLsG4QcrOGpZNj4UWlJEGTArDcmaIUq1KXPdNqqeHINWK2F6HqoBptoCs30vJuDNjqpegamAZKZKtiOwiVBVDUi8q5Q6+lZbp4N7L/ryb5cogy0WYFkyOVFumrhdg2ojrGf0r1b5fkT0P04pp91RHSjbdVQSmnYh11p3L9jwGBgKBQCAQCASgJL8B7nnqcez3tKwAAAAASUVORK5CYII=");
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .productPgSearchBox input{
+        width: 100% !important;
+        height: 45px !important;
+        font-size: 16px !important;
+        padding: 0 10px;
+    }
+    .productPgSearchBox img{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 10%;
+        margin: 10px 0 0 0;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+    .productPgSearchBox input{
+        width: 100% !important;
+        height: 45px !important;
+        font-size: 16px !important;
+        padding: 0 10px;
+    }
+    .productPgSearchBox img{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 10%;
+        margin: 10px 0 0 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .productPgSearchBox input{
+        width: 100% !important;
+        height: 45px !important;
+        font-size: 16px !important;
+        padding: 0 10px;
+    }
+    .productPgSearchBox img{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 7%;
+        margin: 10px 0 0 0;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .productPgSearchBox input{
+        width: 100% !important;
+        height: 55px !important;
+        font-size: 16px !important;
+        padding: 0 10px;
+    }
+    .productPgSearchBox img{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 9%;
+        margin: 12px 0 0 0;
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+    .productPgSearchBox input{
+        width: 100% !important;
+        height: 55px !important;
+        font-size: 16px !important;
+        padding: 0 10px;
+    }
+    .productPgSearchBox img{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 9%;
+        margin: 12px 0 0 0;
+    }
+}
+
+
+/******** Ethics retail ptd.  page *********/
+.RetailPgTextCont h5{
+    font-family: 'Gotham', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 205, 96, 1);
+}
+
+.RetailPgTextCont{
+    padding-top: 56px;
+}
+
+.RetailPgTextCont h3{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 205, 96, 1);
+    margin: 0;
+}
+.RetailPgTextCont img{
+    margin-left: 45%;
+}
+.RetailPgTextCont p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    padding-right: 95px;
+}
+
+.RetailPgBotText{
+    font-family: 'Gotham', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(6, 118, 60, 1);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+/******** Ethics retail ptd.  page *********/
+    .RetailPgTextCont h5{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .RetailPgTextCont{
+        padding-top: 15px;
+    }
+    .RetailPgTextCont h3{
+        font-size: 20px;
+        line-height: 25px;
+        text-align: left;
+        margin: 0;
+    }
+    .RetailPgTextCont img{
+        display: none;
+    }
+    .RetailPgTextCont p{
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 95px;
+    }
+    .RetailPgBotText{
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+/******** Ethics retail ptd.  page *********/
+    .RetailPgTextCont h5{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .RetailPgTextCont{
+        padding-top: 15px;
+    }
+    .RetailPgTextCont h3{
+        font-size: 20px;
+        line-height: 25px;
+        text-align: left;
+        margin: 0;
+    }
+    .RetailPgTextCont img{
+        display: none;
+    }
+    .RetailPgTextCont p{
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 95px;
+    }
+    .RetailPgBotText{
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/******** Ethics retail ptd.  page *********/
+    .RetailPgTextCont h5{
+        font-size: 19px;
+        line-height: 34px;
+    }
+    .RetailPgTextCont{
+        padding-top: 15px;
+    }
+    .RetailPgTextCont h3{
+        font-size: 22px;
+        line-height: 5px;
+        text-align: left;
+        margin: 0;
+    }
+    .RetailPgTextCont img{
+        margin-left: 45%;
+    }
+    .RetailPgTextCont p{
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 95px;
+    }
+    .RetailPgBotText{
+        font-size: 22px;
+        line-height: 36px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+/******** Ethics retail ptd.  page *********/
+    .RetailPgTextCont h5{
+        font-size: 19px;
+        line-height: 34px;
+    }
+    .RetailPgTextCont{
+        padding-top: 15px;
+    }
+    .RetailPgTextCont h3{
+        font-size: 22px;
+        line-height: 5px;
+        text-align: left;
+        margin: 0;
+    }
+    .RetailPgTextCont img{
+        margin-left: 45%;
+    }
+    .RetailPgTextCont p{
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 95px;
+    }
+    .RetailPgBotText{
+        font-size: 22px;
+        line-height: 36px;
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+
+}
