@@ -115,20 +115,26 @@
 }
 .carouselCaption{
     align-items: center;
+    width: 100%;
     height: 760px;
+    position: absolute;
+    bottom: 0;
 }
 .carouselCaptionItem-1{
     width: 40%;
 }
 .carouselCaptionItem-2{
+    position: absolute;
     width: 60%;
-    height: 760px;
+    height:auto !important;
+    bottom: 0;
 }
 .carouselCaptionItem-2 img{
-    width: auto;
-    height: 760px;
-    margin-top: 20px !important;
-    margin-left: 20px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 80%;
 }
 .carousel-control-next,.carousel-control-prev {
     opacity: unset;
@@ -824,30 +830,31 @@
     }
 
     .carouselCaption{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        height: 200px;
-        width: 400px;
-        padding: 50px 50px 0 0;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
     .carouselCaptionItem-1{
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-    }
-    .carouselCaptionItem-2 img{
-        width: auto;
-        height: 155px;
-        margin: 40px 50px 0 0 !important;
-        
+        width: 50%;
+        padding-left: 10%;
     }
     .carouselCaptionItem-2{
-        width: 60%;
-        height: 200px;
+        position: absolute;
+        width: 50%;
+        height:auto !important;
+        bottom: 0;
     }
+    .carouselCaptionItem-2 img{
+        position: absolute;
+        bottom: 0;
+        width: auto;
+        left: 95%;
+        height: 155px;
+    }
+
     .carousel button:not(:disabled) {
         width: 30px !important;
         height: 30px !important;
@@ -1295,33 +1302,33 @@
     }
 
     .carouselCaption{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        height: 200px;
-        width: 400px;
-        padding: 50px 50px 0 0;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
     .carouselCaptionItem-1{
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
+        width: 50%;
+        padding-left: 10%;
     }
     .carouselCaptionItem-2{
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
+        position: absolute;
+        width: 50%;
+        height:auto !important;
+        bottom: 0;
     }
     .carouselCaptionItem-2 img{
+        position: absolute;
+        bottom: 0;
         width: auto;
-        height: 165px;
-        margin: 30px 20px 0 0 !important;
-        
+        left: 80%;
+        height: 170px;
     }
+
+
+
     .carouselCaptionItem-2{
         width: 60%;
         height: 200px;
@@ -1774,33 +1781,31 @@
     }
 
     .carouselCaption{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
+        align-items: center;
+        width: 85%;
         height: 100%;
-        width: 100%;
-        padding:0;
+        position: absolute;
+        left: 10%;
     }
     .carouselCaptionItem-1{
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
+        width: 50%;
+        padding-left: 0%;
+        position: absolute;
     }
     .carouselCaptionItem-2{
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
+        position: absolute;
+        width: 50%;
+        height:auto !important;
+        bottom: 0;
     }
     .carouselCaptionItem-2 img{
+        position: absolute;
+        bottom: 0;
         width: auto;
-        height: 290px;
-        margin: 62px 60px 0 0 !important;
-        
+        left: 80%;
+        height: 300px;
     }
+
     .carouselCaptionItem-2{
         width: 60%;
         height: 350px;
@@ -2252,37 +2257,33 @@
         margin-top: 10px;
     }
 
+
     .carouselCaption{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
+        align-items: center;
+        width: 80%;
         height: 100%;
-        width: 100%;
-        padding:0;
+        position: absolute;
+        left: 10%;
     }
     .carouselCaptionItem-1{
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
+        width: 50%;
+        padding-left: 0%;
+        position: absolute;
     }
     .carouselCaptionItem-2{
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
+        position: absolute;
+        width: 50%;
+        height:auto !important;
+        bottom: 0;
     }
     .carouselCaptionItem-2 img{
+        position: absolute;
+        bottom: 0;
         width: auto;
-        height: 410px;
-        margin: 40px 60px 0 0 !important; 
+        left: 100%;
+        height: auto;
     }
-    .carouselCaptionItem-2{
-        width: 60%;
-        height: 400px;
-    }
+
     .carousel button:not(:disabled) {
         width: 50px !important;
         height: 50px !important;
@@ -2720,7 +2721,7 @@
         margin-top: 10px;
     }
 
-    .carouselCaption{
+    /* .carouselCaption{
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -2745,12 +2746,44 @@
     .carouselCaptionItem-2 img{
         width: auto;
         height: 570px;
-        margin: 10px 60px 0 0 !important; 
+        position: absolute;
+        left: 40% !important;
+        top: 9%;
     }
     .carouselCaptionItem-2{
         width: 60%;
         height: 450px;
+    } */
+
+    .carouselCaption{
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        left: 10%;
     }
+    .carouselCaptionItem-1{
+        width: 50%;
+        padding-left: 0%;
+        position: absolute;
+    }
+    .carouselCaptionItem-2{
+        position: absolute;
+        width: 50%;
+        height:auto !important;
+        bottom: 0;
+    }
+    .carouselCaptionItem-2 img{
+        position: absolute;
+        bottom: 0;
+        width: auto;
+        left: 100%;
+        height: auto;
+    }
+
+
+
+
     .carousel button:not(:disabled) {
         width: 50px !important;
         height: 50px !important;
